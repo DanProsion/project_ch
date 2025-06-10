@@ -1,0 +1,84 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.venv.bak/
+env.bak/
+
+# Environment variables
+.env
+*.env
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# MyPy / Pylint / Pyright / etc.
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs and local data
+*.log
+logs/
+*.sqlite
+*.db
+*.json
+
+# Selenium / ChromeDriver / browser cache
+*.pid
+chromedriver.log
+selenium-screenshot*.png
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MacOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
