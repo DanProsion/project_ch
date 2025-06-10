@@ -64,13 +64,6 @@ coverage.xml
 # VS Code
 .vscode/
 
-# Logs and local data
-*.log
-logs/
-*.sqlite
-*.db
-*.json
-
 # Selenium / ChromeDriver / browser cache
 *.pid
 chromedriver.log
