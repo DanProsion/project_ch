@@ -21,6 +21,11 @@ def main():
     parser.add_argument(
         "--run-sender", action="store_true", help="Run the SMTP sender module"
     )
+
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Run sender in dry-run mode (no emails sent)"
+    )
+
     parser.add_argument(
         "--manage-accounts", action="store_true", help="Manage SMTP accounts"
     )
@@ -51,7 +56,8 @@ def main():
 
     if args.run_sender:
         logging.info("Running SMTP sender...")
-        # TODO: Implement SMTP sender execution
+        from modules.smtp_sender.smtp_sender import send_emails_async
+        asyncio.run(send_emails_async(dry_run=args.dry_run))
 
     if args.manage_accounts:
         logging.info("Managing SMTP accounts...")

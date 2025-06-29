@@ -19,3 +19,4 @@ pyppeteer
 undetected-chromedriver
 pydantic==2.9.2
 typing-extensions==4.10.0
+dnspython

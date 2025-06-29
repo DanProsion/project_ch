@@ -1,0 +1,16 @@
+[
+  {
+    "host": "smtp.example.com",
+    "port": 587,
+    "username": "user1@example.com",
+    "password": "password1",
+    "from_name": "Sender One"
+  },
+  {
+    "host": "smtp.example.com",
+    "port": 587,
+    "username": "user2@example.com",
+    "password": "password2",
+    "from_name": "Sender Two"
+  }
+]

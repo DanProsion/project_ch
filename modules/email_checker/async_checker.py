@@ -80,4 +80,11 @@ async def run_async_email_check():
     results = await asyncio.gather(*tasks)
     df_out = pd.DataFrame(results)
     df_out.to_csv("data/email_check_report.csv", index=False)
-    print("✅ Проверка завершена. Отчет сохранен как data/email_check_report.csv")
+
+    # Сохраняем только валидные адреса
+    valid_df = df_out[df_out["status"] == "valid"]
+    valid_df[["email"]].to_csv("data/recipients.csv", index=False)
+
+    print("Проверка завершена.")
+    print("Отчёт сохранён как data/email_check_report.csv")
+    print("Валидные адреса сохранены как data/recipients.csv")
