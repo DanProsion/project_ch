@@ -1,22 +1,15 @@
 import argparse
 import logging
+import json
+import asyncio
+
 from modules.parser.tutti_scraper import create_driver, parse_all_pages
 from modules.parser.tutti_session import TuttiSession
-
+from modules.email_checker.async_checker import run_async_email_check
 from utils.logger import setup_logging
 
 
 def main():
-    session = TuttiSession(cookies_path="config/tutti_cookies.json", headless=False)
-    driver = session.driver 
-
-    results = parse_all_pages(driver, max_pages=3)
-
-    with open("data/parsed_data.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-
-    session.close()
-    
     parser = argparse.ArgumentParser(description="Automation Project CLI")
 
     parser.add_argument(
@@ -36,17 +29,25 @@ def main():
     )
 
     args = parser.parse_args()
-
     setup_logging()
     logging.info("Starting Automation Project...")
 
     if args.run_parser:
         logging.info("Running tutti.ch parser...")
-        # TODO: Implement parser execution
+        session = TuttiSession(cookies_path="config/tutti_cookies.json", headless=False)
+        driver = session.driver
+        results = parse_all_pages(driver, max_pages=3)
+
+        with open("data/parsed_data.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+
+        session.close()
+        logging.info("Parser completed. Data saved to data/parsed_data.json")
 
     if args.run_checker:
         logging.info("Running email checker...")
-        # TODO: Implement email checker execution
+        asyncio.run(run_async_email_check())
+        logging.info("Email check completed.")
 
     if args.run_sender:
         logging.info("Running SMTP sender...")
@@ -58,7 +59,7 @@ def main():
 
     if args.run_workflow:
         logging.info("Running integrated workflow...")
-        # TODO: Implement integrated workflow execution
+        # TODO: Implement full workflow execution
 
 
 if __name__ == "__main__":
