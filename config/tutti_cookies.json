@@ -1,0 +1,251 @@
+[
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1784803171,
+        "httpOnly": false,
+        "name": "cto_bundle",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "YZkS118zN2VmUFJFbVJjTEh0ZXdrNWNya20zYW54JTJGS2JpdEszUE10eCUyRjh3UjEzMnp0V0MlMkYwWHE5NGV4MmclMkJhd3glMkZvaHJxWExIODNrajBwVDBiOHQxd0pTbmZ3TU5YbGZlR0wlMkJEaUFmaFNjJTJGOEVrTkJuS2ZOdnlWYVBwU0ZHb3U3OGtyRkpRV1VhdkhkcVd6c01IJTJGN1BJV0xBJTNEJTNE"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1766659168,
+        "httpOnly": false,
+        "name": "dakt_2_uuid",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "cdc6b37ff717dc72e02b88774df02f81"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1785667168,
+        "httpOnly": false,
+        "name": "_ga_EXKG6079F0",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "GS2.1.s1751106497$o2$g1$t1751107168$j60$l0$h0"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782508008,
+        "httpOnly": true,
+        "name": "cf_clearance",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "gEFdpszJrM2C2WWy1ogqKrEe5e1HKlO1wX6.NNVHCAA-1750972008-1.2.1.1-fqLYfM2ZNqcR4XICFz6fSHOgcvSEjtf1RP8H5_gfemAi6qtIFAqa7L.zJp9VZHYn5EgCtfB7onxaNy113TZ1OMG4uBNhIksu8gO.NErKVt16354afnvLCk.6b9CbBnmj_nFTINrkO0a1gwMEhQfqP4H0_A.TYkBlTR_Wu7vpPhiLsVQzsGEPRjej.yjrDIdEPfpWqGEo_pum736ocY9OaFDljFhHBNuZuS4h5pjzttTpl7QUqTwix8qxOiRnjlrEYJeJ3LKd6xdVJhDrpTvaO8L1Fe9O8Bo8RQe8cYKP1RvUjzRmDswn1xyvt7dpZeVB70ccK0q2fIlo2CAHt.XtOSelpZqAIhVx5qcG7crUFn3Q0OaZaF9nn8YpuJiv0_60"
+    },
+    {
+        "domain": ".tutti.ch",
+        "httpOnly": true,
+        "name": "_cfuvid",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "wX3v7iekBPpDUMe9BYJV6AKm0nNFZI1vSwXOw2uxRtE-1751106478497-0.0.1.1-604800000"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782508262,
+        "httpOnly": false,
+        "name": "OptanonAlertBoxClosed",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "2025-06-26T21:11:02.063Z"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1758748262,
+        "httpOnly": false,
+        "name": "_gcl_au",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "1.1.2039506158.1750972262"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782643165,
+        "httpOnly": true,
+        "name": "cf_clearance",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "value": "MBEjQkfR3WCFNN1Dr0QIb_VXe.kK.nYQEXw3hFcSCT4-1751107164-1.2.1.1-arj5eVNcblxh1E.AGVYlPaDoV7NBoMJebkYGETDfX3ezb5Bqht0Nn5htrJFJ_1igp2wuWI39v2a9W_bQ3Q25H8K.18mnWuiN.b_ZoenJ8RjLz3Mz2QqtwNb6Rvupcfk0J8xwpsW9v2jBbDo5CDvsmtQBiPwaElCVn2luN_R.5yqaGtTMTknKtdFZPzSBWtkovdBtyMNFdj24FZWheLoN6MFfw7R0tCcToZi2yRPdtlYIlceibTYfEQVmDB.jFw1Ohy3lxOdL57w_WRqjYOIjjuSx9L8bCr2raRXwE1Qe2DMfTGsr_5bl1RlrL9sLsZRm89ZpvNnAMUtiNlIjpXxFvMekrmxw2iXOjNApPJlvSyIvWbyzbqbELhBBxR5jYfSw"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1751108264,
+        "httpOnly": true,
+        "name": "__cf_bm",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "M6JvLwf4XKRhwdsHEeaCL0r2z8ctOnr_VRYbaRv_gCE-1751106463-1.0.1.1-xfI47DIGLjYFwG2PkSARK.IkUofU71dWKU7Qc_k0Z6.9xcv4_.DaIm.V7xJly8BJEQy1Fjpnp6lFFL5U6PCeQR0Trseer5tTVjGeMHu98mU"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1751109062,
+        "httpOnly": false,
+        "name": "__wk_eid",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "210144502o85041086144206210806414444o"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782508262,
+        "httpOnly": false,
+        "name": "eupubconsent-v2",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "CQTm-EgQTm-EgAcABBDEBwFsAP_gAEPgAAQ4LSpD7CrNbWFC8DB3aPogOYgH9cgBYsQBAASBA2AFSAOQ8IQCw0EwFASABAACAAIAg3BBIAAEEABEAUCAQAgEAABEAAQQgBAKAABAgAEQAgJIAAgCAAAAQAAIgAANkxUEmAiAKYKEHEgAwIAACAAAgAABAACAAAEACEA4ABAAAAIAIKhAAwJAMAKAAEEAARgAAAAAAAAAAAAAQAAAI_bbffzPn__qk_e_X_vf_n37v843n77v___gtAACIKERBAURAAEQgYAAIABBUAAFAgAAABIECAABIABDgBABRQSAAAAAAAAAAAACDAAEAAAgACEQAQABAAAAAACAABAAAGAgAAEAAAABAAAAACAIAAABAAAAAAAQAEACBCAAgAAIYQABAACAoAAAAgAAAAIAAAAAQACgAAAAAAAAAAEAAAgAwAgAAAAAAAAAAAAAAAAAAAEAAAAAg-jI0wDB8wTNKYBkARBGRkmxCb9ph45CiFAA.f_wACHwAAAAA"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782642503,
+        "httpOnly": false,
+        "name": "rlv_userid_sharedId",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "c9c79755-bc75-469a-b840-56274fa2ee16"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1785667168,
+        "httpOnly": false,
+        "name": "_ga",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "GA1.1.1809997837.1750972270"
+    },
+    {
+        "domain": ".www.tutti.ch",
+        "expiry": 1753564020,
+        "httpOnly": false,
+        "name": "__vads",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "JITnQNZO7C4vYSmVyzEyg8xXI"
+    },
+    {
+        "domain": ".www.tutti.ch",
+        "expiry": 1752181601,
+        "httpOnly": false,
+        "name": "tutti_csrftoken",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "c9e0161afd6204b954282ebe683e6b8fb42d6b8aff97de753dc101b64a068fec"
+    },
+    {
+        "domain": ".www.tutti.ch",
+        "expiry": 1766525906,
+        "httpOnly": false,
+        "name": "lang",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "de"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782642503,
+        "httpOnly": false,
+        "name": "rlv_userid_sharedId_cst",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "TywALFssOA%3D%3D"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782642503,
+        "httpOnly": false,
+        "name": "rlv_userid_sharedId_last",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "Sat%2C%2028%20Jun%202025%2010%3A28%3A23%20GMT"
+    },
+    {
+        "domain": ".www.tutti.ch",
+        "expiry": 1766659158,
+        "httpOnly": true,
+        "name": "ld_client_info",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "c68555aa-69b9-46fd-bb2b-ce8e8fcc517e"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1766659168,
+        "httpOnly": false,
+        "name": "dakt_2_uuid_ts",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "1750972273045"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1751110775,
+        "httpOnly": false,
+        "name": "__exponea_time2__",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "value": "-1.0321357250213623"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1766659168,
+        "httpOnly": false,
+        "name": "dakt_2_version",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "3.0.12"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1782643165,
+        "httpOnly": false,
+        "name": "OptanonConsent",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "isGpcEnabled=0&datestamp=Sat+Jun+28+2025+13%3A39%3A25+GMT%2B0300+(Moscow+Standard+Time)&version=202503.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=aa307ab9-934c-4209-b109-6241f6a3ccda&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0003%3A1%2CC0001%3A1%2CC0004%3A1%2CC0002%3A1%2CV2STACK42%3A1&intType=1&geolocation=KZ%3BKUS&AwaitingReconsent=false"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1785667175,
+        "httpOnly": false,
+        "name": "__exponea_etc__",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "value": "98f79022-1e84-44b9-8496-da1402318fdb"
+    },
+    {
+        "domain": ".tutti.ch",
+        "expiry": 1751108968,
+        "httpOnly": false,
+        "name": "dakt_2_session_id",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "497c878393e2e9783c245eb0eb445993"
+    }
+]

@@ -1,10 +1,22 @@
 import argparse
 import logging
+from modules.parser.tutti_scraper import create_driver, parse_all_pages
+from modules.parser.tutti_session import TuttiSession
 
 from utils.logger import setup_logging
 
 
 def main():
+    session = TuttiSession(cookies_path="config/tutti_cookies.json", headless=False)
+    driver = session.driver 
+
+    results = parse_all_pages(driver, max_pages=3)
+
+    with open("data/parsed_data.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+
+    session.close()
+    
     parser = argparse.ArgumentParser(description="Automation Project CLI")
 
     parser.add_argument(
