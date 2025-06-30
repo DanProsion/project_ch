@@ -1,16 +1,23 @@
 [
   {
-    "host": "smtp.example.com",
+    "host": "mail.gmx.com",
     "port": 587,
-    "username": "user1@example.com",
-    "password": "password1",
-    "from_name": "Sender One"
+    "username": "mell3@gmx.ch",
+    "password": "dI0HUGIrLk",
+    "from_name": "GMX Mell3"
   },
   {
-    "host": "smtp.example.com",
+    "host": "mail.gmx.com",
     "port": 587,
-    "username": "user2@example.com",
-    "password": "password2",
-    "from_name": "Sender Two"
+    "username": "mentaldagod@gmx.ch",
+    "password": "RAZPKaDStw",
+    "from_name": "GMX Mental"
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mhmdanas48@gmx.ch",
+    "password": "WYsF9OG3",
+    "from_name": "GMX Anas"
   }
 ]

@@ -57,7 +57,7 @@ async def send_email(recipient, sender_account, subject, html_template, attachme
 
         if dry_run:
             logging.info(f"[DRY RUN] Would send to {recipient['email']} using {sender_account['username']}")
-            return True
+            return True, None
 
         smtp = SMTP(
             hostname=sender_account["host"],
@@ -71,12 +71,22 @@ async def send_email(recipient, sender_account, subject, html_template, attachme
         await smtp.send_message(message)
         await smtp.quit()
 
-        logging.info(f"✅ Sent to {recipient['email']} using {sender_account['username']}")
-        return True
+        logging.info(f"Sent to {recipient['email']} using {sender_account['username']}")
+        return True, None
 
     except Exception as e:
-        logging.error(f"❌ Failed to send to {recipient['email']}: {e}")
-        return False
+        err_msg = str(e).lower()
+
+        # Проверка на ошибки SMTP-авторизации/блокировки
+        auth_errors = ["535", "530", "authentication", "login failed", "403", "421", "454"]
+
+        if any(code in err_msg for code in auth_errors):
+            logging.error(f"Auth/Access Error with {sender_account['username']}: {e}")
+            return False, sender_account
+
+        # Ошибка получателя (оставим аккаунт активным)
+        logging.error(f"Failed to send to {recipient['email']} using {sender_account['username']}: {e}")
+        return False, None
 
 # Главная асинхронная функция
 async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_account=10):
@@ -84,7 +94,7 @@ async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_ac
     smtp_accounts = load_smtp_accounts()
 
     if not recipients or not smtp_accounts:
-        logging.error("❗ Нет получателей или SMTP аккаунтов. Остановка.")
+        logging.error("Нет получателей или SMTP аккаунтов. Остановка.")
         return
 
     html_template = """
@@ -111,8 +121,36 @@ async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_ac
                 break
 
         if not sender:
-            logging.warning("🚫 Все SMTP-аккаунты достигли лимита отправок.")
+            logging.warning("Все SMTP-аккаунты достигли лимита отправок.")
             break
 
-        await send_email(recipient, sender, subject, html_template, attachment, dry_run)
+        success, bad_account = await send_email(recipient, sender, subject, html_template, attachment, dry_run)
+
+        if bad_account:
+            logging.warning(f"SMTP account {bad_account['username']} marked as invalid and removed.")
+            archive_burned_account(bad_account)  # добавляем в архив
+            smtp_accounts = [acc for acc in smtp_accounts if acc["username"] != bad_account["username"]]
+            if not smtp_accounts:
+                logging.error("Все SMTP аккаунты сгорели. Остановка.")
+                break
+
         await asyncio.sleep(random.uniform(*delay_range))
+
+
+#Удаление сгоревших SMTP-аккаунтов
+def archive_burned_account(account, path="logs/burned_accounts.json"):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    # Загружаем существующий архив (если он есть)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            archive = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        archive = []
+
+    # Добавляем новый аккаунт
+    archive.append(account)
+
+    # Перезаписываем файл
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(archive, f, indent=2, ensure_ascii=False)

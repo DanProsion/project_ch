@@ -1,0 +1,9 @@
+[
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mell3@gmx.ch",
+    "password": "dI0HUGIrLk",
+    "from_name": "GMX Mell3"
+  }
+]
