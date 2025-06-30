@@ -2,11 +2,12 @@ import asyncio
 import logging
 import os
 import json
+import csv
 import pandas as pd
 from email.message import EmailMessage
 from aiosmtplib import SMTP
 from jinja2 import Template
-
+import random
 
 # Загрузка SMTP аккаунтов из JSON
 def load_smtp_accounts(filepath="config/smtp_accounts.json"):
@@ -17,7 +18,6 @@ def load_smtp_accounts(filepath="config/smtp_accounts.json"):
         logging.error(f"Ошибка загрузки SMTP аккаунтов: {e}")
         return []
 
-
 # Загрузка получателей из CSV
 def load_recipients(path="data/recipients.csv"):
     recipients = []
@@ -27,12 +27,10 @@ def load_recipients(path="data/recipients.csv"):
             recipients.append(row)
     return recipients
 
-
 # Генерация письма
 def render_email_body(template_str, context):
     template = Template(template_str)
     return template.render(context)
-
 
 def create_email(recipient, sender_account, subject, html_body, attachment_path=None):
     msg = EmailMessage()
@@ -50,7 +48,6 @@ def create_email(recipient, sender_account, subject, html_body, attachment_path=
             msg.add_attachment(file_data, maintype="application", subtype="octet-stream", filename=file_name)
 
     return msg
-
 
 # Отправка одного письма
 async def send_email(recipient, sender_account, subject, html_template, attachment_path=None, dry_run=False):
@@ -74,21 +71,20 @@ async def send_email(recipient, sender_account, subject, html_template, attachme
         await smtp.send_message(message)
         await smtp.quit()
 
-        logging.info(f"Sent to {recipient['email']} using {sender_account['username']}")
+        logging.info(f"✅ Sent to {recipient['email']} using {sender_account['username']}")
         return True
 
     except Exception as e:
-        logging.error(f"Failed to send to {recipient['email']}: {e}")
+        logging.error(f"❌ Failed to send to {recipient['email']}: {e}")
         return False
 
-
-# Главная асинхронная функция 
-async def send_emails_async(dry_run=False):
+# Главная асинхронная функция
+async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_account=10):
     recipients = load_recipients()
     smtp_accounts = load_smtp_accounts()
 
     if not recipients or not smtp_accounts:
-        logging.error("Нет получателей или SMTP аккаунтов. Остановка.")
+        logging.error("❗ Нет получателей или SMTP аккаунтов. Остановка.")
         return
 
     html_template = """
@@ -100,11 +96,23 @@ async def send_emails_async(dry_run=False):
     </html>
     """
     subject = "Тестовая рассылка"
-    attachment = None  # или путь к файлу, если нужно прикрепить
+    attachment = None
 
-    tasks = []
-    for i, recipient in enumerate(recipients):
-        sender = smtp_accounts[i % len(smtp_accounts)]  # ротация
-        tasks.append(send_email(recipient, sender, subject, html_template, attachment, dry_run))
+    # учёт использованных аккаунтов
+    account_usage = {acc["username"]: 0 for acc in smtp_accounts}
 
-    await asyncio.gather(*tasks)
+    for recipient in recipients:
+        sender = None
+
+        for acc in smtp_accounts:
+            if account_usage[acc["username"]] < max_emails_per_account:
+                sender = acc
+                account_usage[acc["username"]] += 1
+                break
+
+        if not sender:
+            logging.warning("🚫 Все SMTP-аккаунты достигли лимита отправок.")
+            break
+
+        await send_email(recipient, sender, subject, html_template, attachment, dry_run)
+        await asyncio.sleep(random.uniform(*delay_range))
