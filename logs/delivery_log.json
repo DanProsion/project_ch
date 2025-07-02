@@ -1,0 +1,149 @@
+[
+  {
+    "timestamp": "2025-07-02T21:00:13.107754Z",
+    "recipient": "vasya11@mail.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:00:15.191383Z",
+    "recipient": "ivan.petrov@gmail.com",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:00:19.594522Z",
+    "recipient": "test15@mail.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:00:23.032108Z",
+    "recipient": "test18@bk.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:00:27.044390Z",
+    "recipient": "test19@list.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:00:31.618926Z",
+    "recipient": "test20@inbox.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:00:34.773542Z",
+    "recipient": "nosuchperson12345678@mail.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:07:45.118643Z",
+    "recipient": "vasya11@mail.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:07:49.795858Z",
+    "recipient": "ivan.petrov@gmail.com",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:07:54.109225Z",
+    "recipient": "test15@mail.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:07:56.944440Z",
+    "recipient": "test18@bk.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:07:59.183949Z",
+    "recipient": "test19@list.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:08:03.250380Z",
+    "recipient": "test20@inbox.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:08:06.470924Z",
+    "recipient": "nosuchperson12345678@mail.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:23.991665Z",
+    "recipient": "vasya11@mail.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:26.607231Z",
+    "recipient": "ivan.petrov@gmail.com",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:30.956185Z",
+    "recipient": "test15@mail.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:35.221341Z",
+    "recipient": "test18@bk.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:39.565649Z",
+    "recipient": "test19@list.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:41.952658Z",
+    "recipient": "test20@inbox.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-02T21:17:44.407923Z",
+    "recipient": "nosuchperson12345678@mail.ru",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "dry_run",
+    "error": null
+  }
+]

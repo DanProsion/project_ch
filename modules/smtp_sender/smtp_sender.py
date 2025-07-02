@@ -8,6 +8,8 @@ from email.message import EmailMessage
 from aiosmtplib import SMTP
 from jinja2 import Template
 import random
+from modules.smtp_sender.account_rotator import choose_account
+from modules.smtp_sender.delivery_logger import log_delivery
 
 # Загрузка SMTP аккаунтов из JSON
 def load_smtp_accounts(filepath="config/smtp_accounts.json"):
@@ -38,7 +40,7 @@ def create_email(recipient, sender_account, subject, html_body, attachment_path=
     msg["To"] = recipient["email"]
     msg["Subject"] = subject
 
-    msg.set_content("This is a fallback plain-text message.")
+    msg.set_content("Это резервная версия письма в текстовом формате.")
     msg.add_alternative(html_body, subtype="html")
 
     if attachment_path and os.path.exists(attachment_path):
@@ -56,7 +58,8 @@ async def send_email(recipient, sender_account, subject, html_template, attachme
         message = create_email(recipient, sender_account, subject, html_body, attachment_path)
 
         if dry_run:
-            logging.info(f"[DRY RUN] Would send to {recipient['email']} using {sender_account['username']}")
+            logging.info(f"[ТЕСТ] Письмо бы отправилось на {recipient['email']} через {sender_account['username']}")
+            log_delivery(recipient["email"], sender_account["username"], "dry_run")
             return True, None
 
         smtp = SMTP(
@@ -71,21 +74,21 @@ async def send_email(recipient, sender_account, subject, html_template, attachme
         await smtp.send_message(message)
         await smtp.quit()
 
-        logging.info(f"Sent to {recipient['email']} using {sender_account['username']}")
+        logging.info(f"Письмо отправлено на {recipient['email']} через {sender_account['username']}")
+        log_delivery(recipient["email"], sender_account["username"], "success")
         return True, None
 
     except Exception as e:
         err_msg = str(e).lower()
+        log_delivery(recipient["email"], sender_account["username"], "error", error_message=err_msg)
 
-        # Проверка на ошибки SMTP-авторизации/блокировки
         auth_errors = ["535", "530", "authentication", "login failed", "403", "421", "454"]
 
         if any(code in err_msg for code in auth_errors):
-            logging.error(f"Auth/Access Error with {sender_account['username']}: {e}")
+            logging.error(f"Ошибка авторизации для {sender_account['username']}: {e}")
             return False, sender_account
 
-        # Ошибка получателя (оставим аккаунт активным)
-        logging.error(f"Failed to send to {recipient['email']} using {sender_account['username']}: {e}")
+        logging.error(f"Не удалось отправить письмо на {recipient['email']} через {sender_account['username']}: {e}")
         return False, None
 
 # Главная асинхронная функция
@@ -108,49 +111,39 @@ async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_ac
     subject = "Тестовая рассылка"
     attachment = None
 
-    # учёт использованных аккаунтов
     account_usage = {acc["username"]: 0 for acc in smtp_accounts}
 
     for recipient in recipients:
-        sender = None
-
-        for acc in smtp_accounts:
-            if account_usage[acc["username"]] < max_emails_per_account:
-                sender = acc
-                account_usage[acc["username"]] += 1
-                break
+        sender = choose_account(smtp_accounts, usage_limits=account_usage, max_per_account=max_emails_per_account)
 
         if not sender:
-            logging.warning("Все SMTP-аккаунты достигли лимита отправок.")
+            logging.warning("Нет доступных SMTP аккаунтов для отправки.")
             break
 
+        account_usage[sender["username"]] += 1
         success, bad_account = await send_email(recipient, sender, subject, html_template, attachment, dry_run)
 
         if bad_account:
-            logging.warning(f"SMTP account {bad_account['username']} marked as invalid and removed.")
-            archive_burned_account(bad_account)  # добавляем в архив
+            logging.warning(f"SMTP-аккаунт {bad_account['username']} помечен как невалидный и удалён.")
+            archive_burned_account(bad_account)
             smtp_accounts = [acc for acc in smtp_accounts if acc["username"] != bad_account["username"]]
             if not smtp_accounts:
-                logging.error("Все SMTP аккаунты сгорели. Остановка.")
+                logging.error("Все SMTP-аккаунты сгорели. Остановка.")
                 break
 
         await asyncio.sleep(random.uniform(*delay_range))
 
-
-#Удаление сгоревших SMTP-аккаунтов
+# Удаление сгоревших SMTP-аккаунтов
 def archive_burned_account(account, path="logs/burned_accounts.json"):
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
-    # Загружаем существующий архив (если он есть)
     try:
         with open(path, "r", encoding="utf-8") as f:
             archive = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         archive = []
 
-    # Добавляем новый аккаунт
     archive.append(account)
 
-    # Перезаписываем файл
     with open(path, "w", encoding="utf-8") as f:
         json.dump(archive, f, indent=2, ensure_ascii=False)
