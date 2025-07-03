@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статус выполнения</title>
+</head>
+<body>
+    <h1>Ход выполнения пайплайна</h1>
+    <pre>
+        {% for line in log_lines %}
+{{ line.strip() }}
+        {% endfor %}
+    </pre>
+    <br>
+    <a href="{{ url_for('home') }}">← Назад</a>
+</body>
+</html>

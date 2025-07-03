@@ -145,5 +145,54 @@
     "sender": "mhmdanas48@gmx.ch",
     "status": "dry_run",
     "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:01.974936Z",
+    "recipient": "vasya11@mail.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:11.066595Z",
+    "recipient": "ivan.petrov@gmail.com",
+    "sender": "mell3@gmx.ch",
+    "status": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:17.418700Z",
+    "recipient": "test15@mail.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:26.181555Z",
+    "recipient": "test18@bk.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:32.308428Z",
+    "recipient": "test19@list.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:38.045766Z",
+    "recipient": "test20@inbox.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2025-07-03T20:52:45.641709Z",
+    "recipient": "nosuchperson12345678@mail.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "success",
+    "error": null
   }
 ]
