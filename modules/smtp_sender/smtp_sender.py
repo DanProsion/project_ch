@@ -92,7 +92,7 @@ async def send_email(recipient, sender_account, subject, html_template, attachme
         return False, None
 
 # Главная асинхронная функция
-async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_account=10):
+async def send_emails_async(dry_run=False):
     recipients = load_recipients()
     smtp_accounts = load_smtp_accounts()
 
@@ -111,16 +111,25 @@ async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_ac
     subject = "Тестовая рассылка"
     attachment = None
 
+    # Счётчик писем по каждому аккаунту
     account_usage = {acc["username"]: 0 for acc in smtp_accounts}
 
     for recipient in recipients:
-        sender = choose_account(smtp_accounts, usage_limits=account_usage, max_per_account=max_emails_per_account)
+        sender = choose_account(smtp_accounts, usage_limits=account_usage)
 
         if not sender:
             logging.warning("Нет доступных SMTP аккаунтов для отправки.")
             break
 
-        account_usage[sender["username"]] += 1
+        username = sender["username"]
+        limit = sender.get("limit_per_session", 10)
+        delay = sender.get("delay_seconds", 5)
+
+        if account_usage[username] >= limit:
+            logging.info(f"Аккаунт {username} достиг лимита {limit}. Пропускаем.")
+            continue
+
+        account_usage[username] += 1
         success, bad_account = await send_email(recipient, sender, subject, html_template, attachment, dry_run)
 
         if bad_account:
@@ -130,8 +139,11 @@ async def send_emails_async(dry_run=False, delay_range=(2, 5), max_emails_per_ac
             if not smtp_accounts:
                 logging.error("Все SMTP-аккаунты сгорели. Остановка.")
                 break
+            account_usage.pop(bad_account["username"], None)
+            continue
 
-        await asyncio.sleep(random.uniform(*delay_range))
+        await asyncio.sleep(delay)
+
 
 # Удаление сгоревших SMTP-аккаунтов
 def archive_burned_account(account, path="logs/burned_accounts.json"):

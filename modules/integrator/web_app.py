@@ -15,6 +15,7 @@ app.secret_key = 'your_secret_key'
 LOG_FILE = os.path.join('logs', 'delivery_log')
 RECIPIENTS_FILE = 'data/recipients.csv'
 SMTP_ACCOUNTS = 'config/smtp_accounts.json'
+BURNED_ACCOUNTS = 'logs/burned_accounts.json'
 
 @app.route('/')
 def home():
@@ -28,6 +29,34 @@ def run_workflow():
     except Exception as e:
         flash(f'Ошибка при запуске: {e}')
     return redirect(url_for('home'))
+
+@app.route('/run-parser', methods=['POST'])
+def run_parser():
+    try:
+        subprocess.Popen(['python3', 'main.py', '--run-parser'])
+        flash('Парсер запущен!')
+    except Exception as e:
+        flash(f'Ошибка при запуске парсера: {e}')
+    return redirect(url_for('home'))
+
+@app.route('/run-checker', methods=['POST'])
+def run_checker():
+    try:
+        subprocess.Popen(['python3', 'main.py', '--run-checker'])
+        flash('Чекер запущен!')
+    except Exception as e:
+        flash(f'Ошибка при запуске чекера: {e}')
+    return redirect(url_for('home'))
+
+@app.route('/run-sender', methods=['POST'])
+def run_sender():
+    try:
+        subprocess.Popen(['python3', 'main.py', '--run-sender'])
+        flash('Рассылка запущена!')
+    except Exception as e:
+        flash(f'Ошибка при запуске рассылки: {e}')
+    return redirect(url_for('home'))
+
 
 @app.route('/logs')
 def logs():
@@ -152,7 +181,9 @@ def add_account():
             "port": int(request.form['port']),
             "username": request.form['username'],
             "password": request.form['password'],
-            "from_name": request.form['from_name']
+            "from_name": request.form['from_name'],
+            "limit_per_session": int(request.form['limit_per_session']),
+            "delay_seconds": int(request.form['delay_seconds'])
         }
 
         try:
@@ -184,6 +215,44 @@ def delete_account(username):
         flash(f'Ошибка при удалении: {e}')
     return redirect(url_for('accounts'))
 
+
+@app.route('/accounts/archive')
+def archived_accounts():
+    try:
+        with open(BURNED_ACCOUNTS, 'r', encoding='utf-8') as f:
+            accounts = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        accounts = []
+    return render_template('archived_accounts.html', accounts=accounts)
+
+@app.route('/accounts/restore/<username>', methods=['POST'])
+def restore_account(username):
+    try:
+        with open(BURNED_ACCOUNTS, 'r', encoding='utf-8') as f:
+            archived = json.load(f)
+        with open(SMTP_ACCOUNTS, 'r', encoding='utf-8') as f:
+            active = json.load(f)
+    except:
+        flash('Ошибка при чтении файлов.')
+        return redirect(url_for('archived_accounts'))
+
+    # Найти аккаунт
+    to_restore = [acc for acc in archived if acc['username'] == username]
+    if not to_restore:
+        flash('Аккаунт не найден.')
+        return redirect(url_for('archived_accounts'))
+
+    # Удалить из архива и добавить в активные
+    archived = [acc for acc in archived if acc['username'] != username]
+    active.append(to_restore[0])
+
+    with open(BURNED_ACCOUNTS, 'w', encoding='utf-8') as f:
+        json.dump(archived, f, indent=2, ensure_ascii=False)
+    with open(SMTP_ACCOUNTS, 'w', encoding='utf-8') as f:
+        json.dump(active, f, indent=2, ensure_ascii=False)
+
+    flash('Аккаунт восстановлен!')
+    return redirect(url_for('archived_accounts'))
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000)

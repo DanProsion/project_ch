@@ -47,5 +47,35 @@
     "username": "mhmdanas48@gmx.ch",
     "password": "WYsF9OG3",
     "from_name": "GMX Anas"
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mentaldagod@gmx.ch",
+    "password": "RAZPKaDStw",
+    "from_name": "GMX Mental",
+    "active": true,
+    "limit_per_session": 20,
+    "delay_seconds": 10
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mhmdanas48@gmx.ch",
+    "password": "WYsF9OG3",
+    "from_name": "GMX Anas",
+    "active": true,
+    "limit_per_session": 20,
+    "delay_seconds": 10
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mell3@gmx.ch",
+    "password": "dI0HUGIrLk",
+    "from_name": "GMX Mell3",
+    "active": true,
+    "limit_per_session": 20,
+    "delay_seconds": 10
   }
 ]

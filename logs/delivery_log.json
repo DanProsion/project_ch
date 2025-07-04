@@ -82,5 +82,26 @@
     "sender": "mentaldagod@gmx.ch",
     "status": "success",
     "error": null
+  },
+  {
+    "timestamp": "2025-07-04T22:01:43.225376Z",
+    "recipient": "vasya11@mail.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "error",
+    "error": "(535, 'authentication credentials invalid')"
+  },
+  {
+    "timestamp": "2025-07-04T22:01:44.485967Z",
+    "recipient": "ivan.petrov@gmail.com",
+    "sender": "mhmdanas48@gmx.ch",
+    "status": "error",
+    "error": "(535, 'authentication credentials invalid')"
+  },
+  {
+    "timestamp": "2025-07-04T22:01:46.098689Z",
+    "recipient": "test15@mail.ru",
+    "sender": "mell3@gmx.ch",
+    "status": "error",
+    "error": "(535, 'authentication credentials invalid')"
   }
 ]

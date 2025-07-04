@@ -1,47 +1,113 @@
-<!-- modules/integrator/templates/index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Управление пайплайном</title>
+
+    <!-- Подключение шрифта -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Общие стили -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'IBM Plex Sans', sans-serif;
+        background-image: url('/static/base.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #eaeef4;
+        padding: 30px;
+      }
+
+      h1 {
+        color: #d0d9e6;
+        text-shadow: 0 0 3px #1e2f4d;
+      }
+
+      button {
+        background: linear-gradient(145deg, #1b2f47, #223d5f);
+        color: #eaeef4;
+        padding: 10px 18px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-bottom: 12px;
+        display: inline-block;
+      }
+
+      button:hover {
+        background: linear-gradient(145deg, #2b4160, #3b5d88);
+      }
+
+      form {
+        margin-bottom: 8px;
+      }
+
+      a {
+        color: #5c86ff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      ul {
+        background-color: rgba(0, 80, 0, 0.15);
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
 </head>
+
 <body>
     <h1>Привет! Это веб-интерфейс проекта</h1>
 
-    <!-- Запуск пайплайна -->
+    <!-- Новые кнопки запуска -->
+    <form method="post" action="{{ url_for('run_parser') }}">
+        <button type="submit">🚀 Запустить парсер</button>
+    </form>
+
+    <form method="post" action="{{ url_for('run_checker') }}">
+        <button type="submit">🧪 Запустить чекер</button>
+    </form>
+
+    <form method="post" action="{{ url_for('run_sender') }}">
+        <button type="submit">📬 Запустить рассылку</button>
+    </form>
+
     <form action="/run" method="post">
         <button type="submit">🔁 Запустить весь пайплайн</button>
     </form>
 
-    <br>
-
-    <!-- Просмотр логов -->
     <form action="/logs" method="get">
         <button type="submit">📄 Посмотреть логи рассылки</button>
     </form>
 
-    <br>
-
-    <!-- Просмотр валидных email -->
     <form action="/recipients" method="get">
         <button type="submit">📬 Посмотреть валидные email</button>
     </form>
 
-    <br>
-
-    <!-- Просмотр SMTP аккаунтов -->
     <form action="/accounts" method="get">
         <button type="submit">⚙️ Список SMTP-аккаунтов</button>
     </form>
-
-    <br>
 
     <form action="{{ url_for('status') }}" method="get">
         <button type="submit">📊 Статус выполнения пайплайна</button>
     </form>
 
-
-
-
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul style="color: green;">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
 </body>
 </html>

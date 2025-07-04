@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Архивированные SMTP-аккаунты</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; width: 100%; max-width: 900px; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; }
+    th { background-color: #f0f0f0; text-align: left; }
+    a { text-decoration: none; color: #333; margin-top: 20px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <h1>Архивированные SMTP-аккаунты</h1>
+
+  {% if accounts %}
+  <table>
+    <tr>
+      <th>Имя</th>
+      <th>Почта</th>
+      <th>Действие</th>
+    </tr>
+    {% for acc in accounts %}
+    <tr>
+      <td>{{ acc.from_name }}</td>
+      <td>{{ acc.username }}</td>
+      <td>
+        <form method="post" action="{{ url_for('restore_account', username=acc.username) }}" style="display:inline;">
+          <button type="submit">Восстановить</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>Архив пуст.</p>
+  {% endif %}
+
+  <a href="{{ url_for('accounts') }}">← Назад к списку</a>
+</body>
+</html>
