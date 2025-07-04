@@ -9,6 +9,7 @@ from modules.email_checker.async_checker import run_async_email_check
 from modules.smtp_account_manager.account_manager import SMTPAccountManager
 from utils.logger import setup_logging
 from modules.integrator.workflow import run_workflow
+from utils.logger import log_step
 
 def main():
     parser = argparse.ArgumentParser(description="Automation Project CLI")
@@ -31,10 +32,11 @@ def main():
 
     args = parser.parse_args()
     setup_logging()
-    logging.info("Starting Automation Project...")
+    log_step("Starting Automation Project...")
+
 
     if args.run_parser:
-        logging.info("Running tutti.ch parser...")
+        log_step("Running tutti.ch parser...")
         session = TuttiSession(cookies_path="config/tutti_cookies.json", headless=False)
         driver = session.driver
         results = parse_all_pages(driver, max_pages=3)
@@ -43,44 +45,45 @@ def main():
             json.dump(results, f, indent=2, ensure_ascii=False)
 
         session.close()
-        logging.info("Parser completed. Data saved to data/parsed_data.json")
+        log_step("Parser completed. Data saved to data/parsed_data.json")
 
     if args.run_checker:
-        logging.info("Running email checker...")
+        log_step("Running email checker...")
         asyncio.run(run_async_email_check())
-        logging.info("Email check completed.")
+        log_step("Email check completed.")
 
     if args.run_sender:
-        logging.info("Running SMTP sender...")
+        log_step("Running SMTP sender...")
         from modules.smtp_sender.smtp_sender import send_emails_async
         asyncio.run(send_emails_async(dry_run=args.dry_run))
 
     if args.manage_accounts:
         manager = SMTPAccountManager()
 
-        if args.list:
-            manager.list_accounts()
-        elif args.add_json:
-            try:
-                with open(args.add_json, "r", encoding="utf-8") as f:
-                    new_accounts = json.load(f)
-                manager.add_accounts_from_json(new_accounts)
-            except Exception as e:
-                logging.error(f"Failed to add accounts from JSON: {e}")
-        elif args.add_csv:
-            try:
-                manager.add_accounts_from_csv(args.add_csv)
-            except Exception as e:
-                logging.error(f"Failed to add accounts from CSV: {e}")
-        elif args.deactivate:
-            manager.deactivate_account(args.deactivate)
-        elif args.update and args.update_field and args.update_value:
-            manager.update_account(args.update, {args.update_field: args.update_value})
-        else:
-            logging.info("No valid subcommand provided for account management.")
+    if args.list:
+        manager.list_accounts()
+    elif args.add_json:
+        try:
+            with open(args.add_json, "r", encoding="utf-8") as f:
+                new_accounts = json.load(f)
+            manager.add_accounts_from_json(new_accounts)
+        except Exception as e:
+            log_step(f"Ошибка при добавлении аккаунтов из JSON: {e}")
+    elif args.add_csv:
+        try:
+            manager.add_accounts_from_csv(args.add_csv)
+        except Exception as e:
+            log_step(f"Ошибка при добавлении аккаунтов из CSV: {e}")
+    elif args.deactivate:
+        manager.deactivate_account(args.deactivate)
+    elif args.update and args.update_field and args.update_value:
+        manager.update_account(args.update, {args.update_field: args.update_value})
+    else:
+        log_step("Не указана корректная команда для управления аккаунтами.")
+
 
     if args.run_workflow:
-        logging.info("Running integrated workflow...")
+        log_step("Running integrated workflow...")
         asyncio.run(run_workflow(dry_run=args.dry_run))
 
     if args.run_scheduler:

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Валидные email-адреса</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            background: #eaeaea;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Валидные email-адреса</h1>
+
+    <div class="buttons">
+        <a href="{{ url_for('download_recipients') }}">⬇️ Скачать список</a>
+        <a href="{{ url_for('home') }}">← Назад</a>
+    </div>
+
+    <table>
+        <tr><th>Email</th></tr>
+        {% for row in rows %}
+        <tr><td>{{ row.strip() }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

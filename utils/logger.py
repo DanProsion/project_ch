@@ -1,15 +1,16 @@
 import logging
 import os
 
-def setup_logging(log_dir="logs", log_file="sender.log"):
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
 
+
+def setup_logging():
+    os.makedirs("logs", exist_ok=True)
     logging.basicConfig(
+        filename='logs/pipeline_status.log',
         level=logging.INFO,
-        format="%(asctime)s — %(levelname)s — %(message)s",
-        handlers=[
-            logging.FileHandler(f"{log_dir}/{log_file}", encoding="utf-8"),
-            logging.StreamHandler()
-        ]
+        format='%(asctime)s - %(levelname)s - %(message)s'
     )
+
+def log_step(message):
+    logging.info(message)
+    print(message)

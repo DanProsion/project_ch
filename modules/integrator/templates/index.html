@@ -7,9 +7,41 @@
 </head>
 <body>
     <h1>Привет! Это веб-интерфейс проекта</h1>
+
+    <!-- Запуск пайплайна -->
     <form action="/run" method="post">
-        <button type="submit">Запустить пайплайн</button>
-        
+        <button type="submit">🔁 Запустить весь пайплайн</button>
     </form>
+
+    <br>
+
+    <!-- Просмотр логов -->
+    <form action="/logs" method="get">
+        <button type="submit">📄 Посмотреть логи рассылки</button>
+    </form>
+
+    <br>
+
+    <!-- Просмотр валидных email -->
+    <form action="/recipients" method="get">
+        <button type="submit">📬 Посмотреть валидные email</button>
+    </form>
+
+    <br>
+
+    <!-- Просмотр SMTP аккаунтов -->
+    <form action="/accounts" method="get">
+        <button type="submit">⚙️ Список SMTP-аккаунтов</button>
+    </form>
+
+    <br>
+
+    <form action="{{ url_for('status') }}" method="get">
+        <button type="submit">📊 Статус выполнения пайплайна</button>
+    </form>
+
+
+
+
 </body>
 </html>

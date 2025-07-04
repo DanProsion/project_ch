@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SMTP аккаунты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 900px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список SMTP-аккаунтов</h1>
+
+    <a href="{{ url_for('home') }}">← Назад</a>
+    <a href="{{ url_for('add_account') }}">➕ Добавить аккаунт</a>
+    <a href="{{ url_for('upload_accounts') }}">📂 Загрузить из JSON</a>
+
+
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Почта</th>
+            <th>Действия</th>
+        </tr>
+        {% for acc in accounts %}
+        <tr>
+            <td>{{ acc.from_name }}</td>
+            <td>{{ acc.username }}</td>
+            <td>
+                <form method="post" action="{{ url_for('delete_account', username=acc.username) }}" style="display:inline;">
+                    <button type="submit" onclick="return confirm('Удалить аккаунт?');">Удалить</button>
+                </form>
+                <a href="{{ url_for('edit_account', username=acc.username) }}">Редактировать</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

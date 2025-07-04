@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Статус выполнения</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-width: 800px;
+            overflow-x: auto;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <h1>Ход выполнения пайплайна</h1>
     <pre>
-        {% for line in log_lines %}
+{% for line in log_lines %}
 {{ line.strip() }}
-        {% endfor %}
+{% endfor %}
     </pre>
-    <br>
     <a href="{{ url_for('home') }}">← Назад</a>
 </body>
 </html>

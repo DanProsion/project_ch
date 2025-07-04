@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Добавить SMTP-аккаунт</title>
+</head>
+<body>
+  <h1>Добавить SMTP-аккаунт</h1>
+  <form method="post">
+    <label>Имя отправителя:</label><br>
+    <input type="text" name="from_name" required><br><br>
+
+    <label>Email (username):</label><br>
+    <input type="email" name="username" required><br><br>
+
+    <label>Пароль:</label><br>
+    <input type="text" name="password" required><br><br>
+
+    <label>SMTP сервер (host):</label><br>
+    <input type="text" name="host" value="mail.gmx.com" required><br><br>
+
+    <label>Порт:</label><br>
+    <input type="number" name="port" value="587" required><br><br>
+
+    <button type="submit">Добавить</button>
+  </form>
+  <br>
+  <a href="{{ url_for('accounts') }}">← Назад к списку</a>
+</body>
+</html>

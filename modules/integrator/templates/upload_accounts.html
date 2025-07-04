@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка SMTP аккаунтов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 6px 12px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Загрузить SMTP аккаунты из JSON</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="json_file" accept=".json" required>
+        <br>
+        <button type="submit">Загрузить</button>
+    </form>
+    <a href="{{ url_for('accounts') }}">← Назад к списку</a>
+</body>
+</html>

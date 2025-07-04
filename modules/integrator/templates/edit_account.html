@@ -1,0 +1,8 @@
+<form method="post">
+  <label>Host:</label><input name="host" value="{{ account.host }}">
+  <label>Port:</label><input name="port" value="{{ account.port }}">
+  <label>Password:</label><input name="password" value="{{ account.password }}">
+  <label>From Name:</label><input name="from_name" value="{{ account.from_name }}">
+  <label>Активен:</label><input type="checkbox" name="active" {% if account.active %}checked{% endif %}>
+  <button type="submit">Сохранить</button>
+</form>

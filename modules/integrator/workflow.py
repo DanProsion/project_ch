@@ -1,15 +1,17 @@
 import asyncio
 import json
-import logging
 import os
+
 from modules.parser.tutti_session import TuttiSession
 from modules.parser.tutti_scraper import parse_all_pages
 from modules.email_checker.async_checker import run_async_email_check
 from modules.smtp_sender.smtp_sender import send_emails_async
 
+from utils.logger import log_step  # Импорт функции логирования
+
 
 def run_parser(max_pages=3, cookies_path="config/tutti_cookies.json"):
-    logging.info("[WORKFLOW] Парсинг объявлений")
+    log_step("[WORKFLOW] Парсинг объявлений")
     session = TuttiSession(cookies_path=cookies_path, headless=True)
     driver = session.driver
 
@@ -18,31 +20,31 @@ def run_parser(max_pages=3, cookies_path="config/tutti_cookies.json"):
         os.makedirs("data", exist_ok=True)
         with open("data/parsed_data.json", "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
-        logging.info(f"[WORKFLOW] Парсинг завершён. Сохранено: {len(results)} записей.")
+        log_step(f"[WORKFLOW] Парсинг завершён. Сохранено: {len(results)} записей.")
     except Exception as e:
-        logging.error(f"[WORKFLOW] Ошибка на этапе парсинга: {e}")
+        log_step(f"[WORKFLOW] Ошибка на этапе парсинга: {e}")
     finally:
         session.close()
 
 
 async def run_workflow(dry_run=True):
-    logging.info("[WORKFLOW] Запуск полного пайплайна...")
+    log_step("[WORKFLOW] Запуск полного пайплайна...")
 
     # 1. Tutti Parser
     run_parser()
 
-    # 2. Email Generator & Checker
-    logging.info("[WORKFLOW] Генерация и валидация email-адресов...")
+    # 2. Email Checker
+    log_step("[WORKFLOW] Генерация и валидация email-адресов...")
     try:
         await run_async_email_check()
-        logging.info("[WORKFLOW] Проверка e-mail адресов завершена.")
+        log_step("[WORKFLOW] Проверка e-mail адресов завершена.")
     except Exception as e:
-        logging.error(f"[WORKFLOW] Ошибка при проверке e-mail: {e}")
+        log_step(f"[WORKFLOW] Ошибка при проверке e-mail: {e}")
 
     # 3. SMTP Sender
-    logging.info("[WORKFLOW] Отправка писем...")
+    log_step("[WORKFLOW] Отправка писем...")
     try:
         await send_emails_async(dry_run=dry_run)
-        logging.info("[WORKFLOW] Рассылка завершена.")
+        log_step("[WORKFLOW] Рассылка завершена.")
     except Exception as e:
-        logging.error(f"[WORKFLOW] Ошибка при отправке писем: {e}")
+        log_step(f"[WORKFLOW] Ошибка при отправке писем: {e}")

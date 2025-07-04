@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Логи SMTP-рассылки</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; width: 100%; max-width: 1200px; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; }
+    th { background-color: #f0f0f0; }
+    .success { color: rgb(158, 168, 158); }
+    .error { color: red; }
+    .dry_run { color: gray; }
+    .buttons {
+      margin-bottom: 20px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      background: #eaeaea;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Логи SMTP-рассылки</h1>
+
+  <div class="buttons">
+    <a href="{{ url_for('download_logs') }}">⬇️ Скачать логи</a>
+    <a href="{{ url_for('home') }}">← Назад</a>
+  </div>
+
+  {% if logs %}
+  <table>
+    <tr>
+      <th>Время</th>
+      <th>Отправитель</th>
+      <th>Получатель</th>
+      <th>Статус</th>
+      <th>Ошибка</th>
+    </tr>
+    {% for entry in logs %}
+    <tr>
+      <td>{{ entry.timestamp }}</td>
+      <td>{{ entry.sender }}</td>
+      <td>{{ entry.recipient }}</td>
+      <td class="{{ entry.status }}">{{ entry.status }}</td>
+      <td>{{ entry.error if entry.error else "-" }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p style="background:#f0f0f0;padding:10px;">Файл логов не найден или он пуст.</p>
+  {% endif %}
+</body>
+</html>

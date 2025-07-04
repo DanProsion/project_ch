@@ -10,9 +10,9 @@ test7@live.com,invalid,Den
 test8@msn.com,invalid,Nadya
 test9@proton.me,invalid,Petya
 test10@tutanota.com,invalid,Katya
-test11@mailbox.org,invalid,John
+test11@mailbox.org,unknown,John
 test12@zoho.com,invalid,Peter
-test13@startmail.com,invalid,Ivan
+test13@startmail.com,unknown,Ivan
 test14@mailfence.com,unknown,Nadya
 test15@mail.ru,valid,Petya
 test16@yandex.ru,invalid,John

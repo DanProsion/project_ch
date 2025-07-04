@@ -334,3 +334,44 @@ RuntimeError: Event loop is closed
 2025-07-03 23:59:02,210 — INFO — [WORKFLOW] Парсинг объявлений
 2025-07-03 23:59:43,647 — INFO — [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
 2025-07-03 23:59:43,730 — INFO — [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 12:39:10,670 — INFO — Starting Automation Project...
+2025-07-04 12:39:10,671 — INFO — Running integrated workflow...
+2025-07-04 12:39:10,672 — INFO — [WORKFLOW] Запуск полного пайплайна...
+2025-07-04 12:39:10,673 — INFO — [WORKFLOW] Парсинг объявлений
+2025-07-04 12:39:53,292 — INFO — [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-04 12:39:53,364 — INFO — [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 12:40:33,007 — INFO — [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-04 12:40:33,009 — INFO — [WORKFLOW] Отправка писем...
+2025-07-04 12:40:35,568 — INFO — Письмо отправлено на vasya11@mail.ru через mentaldagod@gmx.ch
+2025-07-04 12:40:43,779 — INFO — Письмо отправлено на ivan.petrov@gmail.com через mentaldagod@gmx.ch
+2025-07-04 12:40:49,083 — INFO — Письмо отправлено на test15@mail.ru через mentaldagod@gmx.ch
+2025-07-04 12:40:55,749 — ERROR — Ошибка авторизации для mhmdanas48@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-04 12:40:55,751 — WARNING — SMTP-аккаунт mhmdanas48@gmx.ch помечен как невалидный и удалён.
+2025-07-04 12:41:04,138 — INFO — Письмо отправлено на test19@list.ru через mentaldagod@gmx.ch
+2025-07-04 12:41:10,075 — INFO — Письмо отправлено на test20@inbox.ru через mentaldagod@gmx.ch
+2025-07-04 12:41:16,607 — INFO — Письмо отправлено на nosuchperson12345678@mail.ru через mentaldagod@gmx.ch
+2025-07-04 12:41:19,462 — INFO — [WORKFLOW] Рассылка завершена.
+2025-07-04 12:41:19,518 — ERROR — Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7a89b44db3a0>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed

@@ -4,20 +4,47 @@
     "port": 587,
     "username": "mell3@gmx.ch",
     "password": "dI0HUGIrLk",
-    "from_name": "GMX Mell3"
+    "from_name": "GMX Mell3",
+    "active": true
   },
   {
     "host": "mail.gmx.com",
     "port": 587,
     "username": "mentaldagod@gmx.ch",
     "password": "RAZPKaDStw",
-    "from_name": "GMX Mental"
+    "from_name": "GMX Mental",
+    "active": true
   },
   {
     "host": "mail.gmx.com",
     "port": 587,
     "username": "mhmdanas48@gmx.ch",
     "password": "WYsF9OG3",
-    "from_name": "GMX Anas"
+    "from_name": "GMX Anas",
+    "active": true
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mell3@gmx.ch",
+    "password": "dI0HUGIrLk",
+    "from_name": "GMX Mell3",
+    "active": true
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mentaldagod@gmx.ch",
+    "password": "RAZPKaDStw",
+    "from_name": "GMX Mental",
+    "active": true
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mhmdanas48@gmx.ch",
+    "password": "WYsF9OG3",
+    "from_name": "GMX Anas",
+    "active": true
   }
 ]

@@ -1,0 +1,383 @@
+2025-07-04 12:57:06,498 - INFO - Starting Automation Project...
+2025-07-04 12:57:06,499 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-04 12:57:06,500 - INFO - Running integrated workflow...
+2025-07-04 12:57:06,501 - INFO - [WORKFLOW] Запуск полного пайплайна...
+2025-07-04 12:57:06,501 - INFO - [WORKFLOW] Парсинг объявлений
+2025-07-04 12:57:48,217 - INFO - [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-04 12:57:48,288 - INFO - [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 12:58:20,920 - INFO - [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-04 12:58:20,922 - INFO - [WORKFLOW] Отправка писем...
+2025-07-04 12:58:24,274 - INFO - Письмо отправлено на vasya11@mail.ru через mentaldagod@gmx.ch
+2025-07-04 12:58:29,243 - INFO - Письмо отправлено на ivan.petrov@gmail.com через mentaldagod@gmx.ch
+2025-07-04 12:58:35,140 - INFO - Письмо отправлено на test15@mail.ru через mell3@gmx.ch
+2025-07-04 12:58:42,554 - INFO - Письмо отправлено на test18@bk.ru через mentaldagod@gmx.ch
+2025-07-04 12:58:49,514 - INFO - Письмо отправлено на test19@list.ru через mell3@gmx.ch
+2025-07-04 12:58:54,667 - ERROR - Ошибка авторизации для mhmdanas48@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-04 12:58:54,669 - WARNING - SMTP-аккаунт mhmdanas48@gmx.ch помечен как невалидный и удалён.
+2025-07-04 12:59:02,110 - INFO - Письмо отправлено на nosuchperson12345678@mail.ru через mentaldagod@gmx.ch
+2025-07-04 12:59:04,255 - INFO - [WORKFLOW] Рассылка завершена.
+2025-07-04 12:59:04,308 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x75e03e9dfd30>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-04 13:02:03,269 - INFO - Starting Automation Project...
+2025-07-04 13:02:03,270 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-04 13:02:03,270 - INFO - Running integrated workflow...
+2025-07-04 13:02:03,271 - INFO - [WORKFLOW] Запуск полного пайплайна...
+2025-07-04 13:02:03,271 - INFO - [WORKFLOW] Парсинг объявлений
+2025-07-04 13:02:45,001 - INFO - [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-04 13:02:45,132 - INFO - [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 13:03:16,717 - INFO - [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-04 13:03:16,718 - INFO - [WORKFLOW] Отправка писем...
+2025-07-04 13:03:18,799 - INFO - Письмо отправлено на vasya11@mail.ru через mentaldagod@gmx.ch
+2025-07-04 13:03:24,865 - INFO - Письмо отправлено на ivan.petrov@gmail.com через mell3@gmx.ch
+2025-07-04 13:03:30,095 - INFO - Письмо отправлено на test3@outlook.com через mell3@gmx.ch
+2025-07-04 13:03:36,714 - INFO - Письмо отправлено на test15@mail.ru через mell3@gmx.ch
+2025-07-04 13:03:42,073 - INFO - Письмо отправлено на test18@bk.ru через mentaldagod@gmx.ch
+2025-07-04 13:03:46,660 - ERROR - Ошибка авторизации для mhmdanas48@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-04 13:03:46,660 - WARNING - SMTP-аккаунт mhmdanas48@gmx.ch помечен как невалидный и удалён.
+2025-07-04 13:03:53,048 - INFO - Письмо отправлено на test20@inbox.ru через mell3@gmx.ch
+2025-07-04 13:03:58,048 - INFO - Письмо отправлено на nosuchperson12345678@mail.ru через mentaldagod@gmx.ch
+2025-07-04 13:04:02,615 - INFO - [WORKFLOW] Рассылка завершена.
+2025-07-04 13:04:02,658 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x794e23c0e4d0>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-04 13:04:57,007 - INFO - Starting Automation Project...
+2025-07-04 13:04:57,008 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-04 13:04:57,008 - INFO - Running integrated workflow...
+2025-07-04 13:04:57,009 - INFO - [WORKFLOW] Запуск полного пайплайна...
+2025-07-04 13:04:57,010 - INFO - [WORKFLOW] Парсинг объявлений
+2025-07-04 13:05:38,829 - INFO - [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-04 13:05:38,958 - INFO - [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 13:06:11,388 - INFO - [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-04 13:06:11,388 - INFO - [WORKFLOW] Отправка писем...
+2025-07-04 13:06:14,863 - INFO - Письмо отправлено на vasya11@mail.ru через mell3@gmx.ch
+2025-07-04 13:06:23,711 - INFO - Письмо отправлено на ivan.petrov@gmail.com через mell3@gmx.ch
+2025-07-04 13:06:31,891 - INFO - Письмо отправлено на test15@mail.ru через mell3@gmx.ch
+2025-07-04 13:06:41,529 - INFO - Письмо отправлено на test18@bk.ru через mell3@gmx.ch
+2025-07-04 13:06:50,993 - ERROR - Ошибка авторизации для mhmdanas48@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-04 13:06:50,993 - WARNING - SMTP-аккаунт mhmdanas48@gmx.ch помечен как невалидный и удалён.
+2025-07-04 13:07:00,701 - INFO - Письмо отправлено на test20@inbox.ru через mell3@gmx.ch
+2025-07-04 13:07:10,647 - INFO - Письмо отправлено на nosuchperson12345678@mail.ru через mell3@gmx.ch
+2025-07-04 13:07:14,853 - INFO - [WORKFLOW] Рассылка завершена.
+2025-07-04 13:07:14,983 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x71ffbf9ecbb0>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-04 13:19:14,629 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:19:14,631 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:19:14,642 - INFO -  * Restarting with stat
+2025-07-04 13:19:16,360 - WARNING -  * Debugger is active!
+2025-07-04 13:19:16,362 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:20:04,075 - INFO - 127.0.0.1 - - [04/Jul/2025 13:20:04] "GET / HTTP/1.1" 200 -
+2025-07-04 13:20:07,114 - INFO - 127.0.0.1 - - [04/Jul/2025 13:20:07] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-07-04 13:20:07,127 - INFO - 127.0.0.1 - - [04/Jul/2025 13:20:07] "GET / HTTP/1.1" 200 -
+2025-07-04 13:20:08,446 - INFO - Starting Automation Project...
+2025-07-04 13:20:08,446 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-04 13:20:08,447 - INFO - Running integrated workflow...
+2025-07-04 13:20:08,447 - INFO - [WORKFLOW] Запуск полного пайплайна...
+2025-07-04 13:20:08,448 - INFO - [WORKFLOW] Парсинг объявлений
+2025-07-04 13:20:10,491 - INFO - 127.0.0.1 - - [04/Jul/2025 13:20:10] "GET /status HTTP/1.1" 200 -
+2025-07-04 13:20:22,916 - INFO - 127.0.0.1 - - [04/Jul/2025 13:20:22] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:20:51,705 - INFO - [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-04 13:20:51,800 - INFO - [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 13:20:59,332 - INFO - 127.0.0.1 - - [04/Jul/2025 13:20:59] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:21:19,972 - INFO - 127.0.0.1 - - [04/Jul/2025 13:21:19] "GET /status HTTP/1.1" 200 -
+2025-07-04 13:21:26,855 - INFO - [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-04 13:21:26,856 - INFO - [WORKFLOW] Отправка писем...
+2025-07-04 13:21:29,327 - INFO - Письмо отправлено на vasya11@mail.ru через mell3@gmx.ch
+2025-07-04 13:21:35,134 - INFO - Письмо отправлено на ivan.petrov@gmail.com через mell3@gmx.ch
+2025-07-04 13:21:41,426 - INFO - Письмо отправлено на test15@mail.ru через mentaldagod@gmx.ch
+2025-07-04 13:21:47,446 - ERROR - Ошибка авторизации для mhmdanas48@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-04 13:21:47,447 - WARNING - SMTP-аккаунт mhmdanas48@gmx.ch помечен как невалидный и удалён.
+2025-07-04 13:21:54,071 - INFO - Письмо отправлено на test19@list.ru через mentaldagod@gmx.ch
+2025-07-04 13:21:58,787 - INFO - Письмо отправлено на test20@inbox.ru через mentaldagod@gmx.ch
+2025-07-04 13:22:06,057 - INFO - Письмо отправлено на nosuchperson12345678@mail.ru через mell3@gmx.ch
+2025-07-04 13:22:10,562 - INFO - [WORKFLOW] Рассылка завершена.
+2025-07-04 13:22:10,629 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7b3c780175b0>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-04 13:22:46,721 - INFO - 127.0.0.1 - - [04/Jul/2025 13:22:46] "GET /status HTTP/1.1" 200 -
+2025-07-04 13:23:02,217 - INFO - 127.0.0.1 - - [04/Jul/2025 13:23:02] "GET / HTTP/1.1" 200 -
+2025-07-04 13:24:14,498 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:24:14,500 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:24:14,506 - INFO -  * Restarting with stat
+2025-07-04 13:24:15,492 - WARNING -  * Debugger is active!
+2025-07-04 13:24:15,494 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:24:20,113 - INFO - 127.0.0.1 - - [04/Jul/2025 13:24:20] "GET / HTTP/1.1" 200 -
+2025-07-04 13:24:22,292 - INFO - 127.0.0.1 - - [04/Jul/2025 13:24:22] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:26:42,716 - INFO - 127.0.0.1 - - [04/Jul/2025 13:26:42] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:27:37,844 - INFO - 127.0.0.1 - - [04/Jul/2025 13:27:37] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:27:40,693 - INFO - 127.0.0.1 - - [04/Jul/2025 13:27:40] "GET / HTTP/1.1" 200 -
+2025-07-04 13:27:42,715 - INFO - 127.0.0.1 - - [04/Jul/2025 13:27:42] "GET /recipients HTTP/1.1" 200 -
+2025-07-04 13:27:47,224 - INFO - 127.0.0.1 - - [04/Jul/2025 13:27:47] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:28:04,768 - INFO - 127.0.0.1 - - [04/Jul/2025 13:28:04] "GET /status HTTP/1.1" 200 -
+2025-07-04 13:28:25,149 - INFO - 127.0.0.1 - - [04/Jul/2025 13:28:25] "GET / HTTP/1.1" 200 -
+2025-07-04 13:32:14,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:32:14,565 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:32:14,571 - INFO -  * Restarting with stat
+2025-07-04 13:32:16,311 - WARNING -  * Debugger is active!
+2025-07-04 13:32:16,316 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:32:17,486 - INFO - 127.0.0.1 - - [04/Jul/2025 13:32:17] "GET / HTTP/1.1" 200 -
+2025-07-04 13:32:20,922 - INFO - 127.0.0.1 - - [04/Jul/2025 13:32:20] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:32:25,128 - INFO - 127.0.0.1 - - [04/Jul/2025 13:32:25] "GET /accounts/add HTTP/1.1" 200 -
+2025-07-04 13:32:31,274 - INFO - 127.0.0.1 - - [04/Jul/2025 13:32:31] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:33:36,754 - INFO - 127.0.0.1 - - [04/Jul/2025 13:33:36] "GET / HTTP/1.1" 200 -
+2025-07-04 13:33:38,688 - INFO - 127.0.0.1 - - [04/Jul/2025 13:33:38] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:33:41,080 - INFO - 127.0.0.1 - - [04/Jul/2025 13:33:41] "GET /accounts/add HTTP/1.1" 200 -
+2025-07-04 13:33:58,443 - INFO - 127.0.0.1 - - [04/Jul/2025 13:33:58] "[32mPOST /accounts/add HTTP/1.1[0m" 302 -
+2025-07-04 13:33:58,475 - INFO - 127.0.0.1 - - [04/Jul/2025 13:33:58] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:34:02,036 - INFO - 127.0.0.1 - - [04/Jul/2025 13:34:02] "GET / HTTP/1.1" 200 -
+2025-07-04 13:34:06,097 - INFO - 127.0.0.1 - - [04/Jul/2025 13:34:06] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:34:08,700 - INFO - 127.0.0.1 - - [04/Jul/2025 13:34:08] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:34:11,743 - INFO - 127.0.0.1 - - [04/Jul/2025 13:34:11] "[32mPOST /accounts/delete/vdd@kkkk.com HTTP/1.1[0m" 302 -
+2025-07-04 13:34:11,762 - INFO - 127.0.0.1 - - [04/Jul/2025 13:34:11] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:34:13,936 - INFO - 127.0.0.1 - - [04/Jul/2025 13:34:13] "GET / HTTP/1.1" 200 -
+2025-07-04 13:35:20,469 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:35:20,470 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:35:20,484 - INFO -  * Restarting with stat
+2025-07-04 13:35:21,624 - WARNING -  * Debugger is active!
+2025-07-04 13:35:21,625 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:35:22,186 - INFO - 127.0.0.1 - - [04/Jul/2025 13:35:22] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:39:16,799 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 13:39:16,844 - INFO -  * Restarting with stat
+2025-07-04 13:39:17,851 - WARNING -  * Debugger is active!
+2025-07-04 13:39:17,852 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:39:59,708 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 13:39:59,751 - INFO -  * Restarting with stat
+2025-07-04 13:40:00,977 - WARNING -  * Debugger is active!
+2025-07-04 13:40:00,980 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:40:05,195 - INFO - 127.0.0.1 - - [04/Jul/2025 13:40:05] "GET / HTTP/1.1" 200 -
+2025-07-04 13:40:08,342 - INFO - 127.0.0.1 - - [04/Jul/2025 13:40:08] "GET / HTTP/1.1" 200 -
+2025-07-04 13:40:09,826 - INFO - 127.0.0.1 - - [04/Jul/2025 13:40:09] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:41:16,501 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:41:16,502 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:41:16,508 - INFO -  * Restarting with stat
+2025-07-04 13:41:18,202 - WARNING -  * Debugger is active!
+2025-07-04 13:41:18,205 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:41:29,400 - INFO - 127.0.0.1 - - [04/Jul/2025 13:41:29] "GET / HTTP/1.1" 200 -
+2025-07-04 13:41:32,808 - INFO - 127.0.0.1 - - [04/Jul/2025 13:41:32] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:41:36,309 - INFO - 127.0.0.1 - - [04/Jul/2025 13:41:36] "GET / HTTP/1.1" 200 -
+2025-07-04 13:41:37,976 - INFO - 127.0.0.1 - - [04/Jul/2025 13:41:37] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:43:27,566 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 13:43:27,624 - INFO -  * Restarting with stat
+2025-07-04 13:43:28,614 - WARNING -  * Debugger is active!
+2025-07-04 13:43:28,616 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:43:47,102 - INFO - 127.0.0.1 - - [04/Jul/2025 13:43:47] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:43:49,624 - INFO - 127.0.0.1 - - [04/Jul/2025 13:43:49] "GET / HTTP/1.1" 200 -
+2025-07-04 13:44:51,625 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:44:51,627 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:44:51,639 - INFO -  * Restarting with stat
+2025-07-04 13:44:53,465 - WARNING -  * Debugger is active!
+2025-07-04 13:44:53,468 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:45:01,794 - INFO - 127.0.0.1 - - [04/Jul/2025 13:45:01] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:45:04,426 - INFO - 127.0.0.1 - - [04/Jul/2025 13:45:04] "GET / HTTP/1.1" 200 -
+2025-07-04 13:45:38,036 - INFO - 127.0.0.1 - - [04/Jul/2025 13:45:38] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:49:40,404 - INFO - 127.0.0.1 - - [04/Jul/2025 13:49:40] "GET / HTTP/1.1" 200 -
+2025-07-04 13:49:47,078 - INFO - 127.0.0.1 - - [04/Jul/2025 13:49:47] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:49:48,595 - INFO - 127.0.0.1 - - [04/Jul/2025 13:49:48] "GET / HTTP/1.1" 200 -
+2025-07-04 13:55:31,849 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:55:31,851 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:55:31,857 - INFO -  * Restarting with stat
+2025-07-04 13:55:32,636 - WARNING -  * Debugger is active!
+2025-07-04 13:55:32,638 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:55:34,091 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:34] "GET / HTTP/1.1" 200 -
+2025-07-04 13:55:36,169 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:36] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-07-04 13:55:36,187 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:36] "GET / HTTP/1.1" 200 -
+2025-07-04 13:55:38,272 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:38] "GET /status HTTP/1.1" 200 -
+2025-07-04 13:55:38,697 - INFO - Starting Automation Project...
+2025-07-04 13:55:38,698 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-04 13:55:38,698 - INFO - Running integrated workflow...
+2025-07-04 13:55:38,699 - INFO - [WORKFLOW] Запуск полного пайплайна...
+2025-07-04 13:55:38,700 - INFO - [WORKFLOW] Парсинг объявлений
+2025-07-04 13:55:43,709 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:43] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:55:45,797 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:45] "GET / HTTP/1.1" 200 -
+2025-07-04 13:55:47,729 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:47] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 13:55:50,324 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:50] "GET /recipients HTTP/1.1" 200 -
+2025-07-04 13:55:54,008 - INFO - 127.0.0.1 - - [04/Jul/2025 13:55:54] "GET /status HTTP/1.1" 200 -
+2025-07-04 13:56:16,726 - INFO - [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-04 13:56:16,729 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x73f3b7b8e590>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/73e719f285c64cb8f1b6fbc728dd77c8
+2025-07-04 13:56:16,730 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x73f3b7b8f850>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/73e719f285c64cb8f1b6fbc728dd77c8
+2025-07-04 13:56:16,732 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x73f3b7b8f580>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/73e719f285c64cb8f1b6fbc728dd77c8
+2025-07-04 13:56:16,733 - INFO - [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-04 13:56:29,952 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 13:56:29,953 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 13:56:29,964 - INFO -  * Restarting with stat
+2025-07-04 13:56:31,276 - WARNING -  * Debugger is active!
+2025-07-04 13:56:31,277 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:56:31,932 - INFO - 127.0.0.1 - - [04/Jul/2025 13:56:31] "GET / HTTP/1.1" 200 -
+2025-07-04 13:56:33,875 - INFO - 127.0.0.1 - - [04/Jul/2025 13:56:33] "GET /logs HTTP/1.1" 200 -
+2025-07-04 13:56:53,503 - INFO - [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-04 13:56:53,503 - INFO - [WORKFLOW] Отправка писем...
+2025-07-04 13:56:56,275 - ERROR - Ошибка авторизации для mhmdanas48@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-04 13:56:56,275 - WARNING - SMTP-аккаунт mhmdanas48@gmx.ch помечен как невалидный и удалён.
+2025-07-04 13:57:01,069 - INFO - Письмо отправлено на ivan.petrov@gmail.com через mentaldagod@gmx.ch
+2025-07-04 13:57:07,421 - INFO - Письмо отправлено на test15@mail.ru через mentaldagod@gmx.ch
+2025-07-04 13:57:13,190 - INFO - Письмо отправлено на test18@bk.ru через mell3@gmx.ch
+2025-07-04 13:57:19,507 - INFO - Письмо отправлено на test19@list.ru через mell3@gmx.ch
+2025-07-04 13:57:25,854 - INFO - Письмо отправлено на test20@inbox.ru через mentaldagod@gmx.ch
+2025-07-04 13:57:31,135 - INFO - Письмо отправлено на nosuchperson12345678@mail.ru через mentaldagod@gmx.ch
+2025-07-04 13:57:35,925 - INFO - [WORKFLOW] Рассылка завершена.
+2025-07-04 13:57:35,951 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x73f3b7a5f6a0>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-04 13:58:15,408 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 13:58:15,506 - INFO -  * Restarting with stat
+2025-07-04 13:58:16,270 - WARNING -  * Debugger is active!
+2025-07-04 13:58:16,271 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 13:58:24,359 - INFO - 127.0.0.1 - - [04/Jul/2025 13:58:24] "GET /logs HTTP/1.1" 200 -
+2025-07-04 14:02:23,949 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 14:02:24,030 - INFO -  * Restarting with stat
+2025-07-04 14:02:24,717 - WARNING -  * Debugger is active!
+2025-07-04 14:02:24,718 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 14:04:32,679 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:32] "GET /logs HTTP/1.1" 200 -
+2025-07-04 14:04:38,965 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:38] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 14:04:40,937 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:40] "[35m[1mGET /accounts/edit/mell3@gmx.ch HTTP/1.1[0m" 500 -
+2025-07-04 14:04:40,981 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:40] "GET /accounts/edit/mell3@gmx.ch?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-04 14:04:40,981 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:40] "GET /accounts/edit/mell3@gmx.ch?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-04 14:04:41,579 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:41] "GET /accounts/edit/mell3@gmx.ch?__debugger__=yes&cmd=resource&f=console.png&s=wp3i6BuARXI3Nns15TW3 HTTP/1.1" 200 -
+2025-07-04 14:04:41,800 - INFO - 127.0.0.1 - - [04/Jul/2025 14:04:41] "GET /accounts/edit/mell3@gmx.ch?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-04 14:05:28,164 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-04 14:05:28,165 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-04 14:05:28,172 - INFO -  * Restarting with stat
+2025-07-04 14:05:29,913 - WARNING -  * Debugger is active!
+2025-07-04 14:05:29,915 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 14:05:31,247 - INFO - 127.0.0.1 - - [04/Jul/2025 14:05:31] "GET / HTTP/1.1" 200 -
+2025-07-04 14:05:34,189 - INFO - 127.0.0.1 - - [04/Jul/2025 14:05:34] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 14:05:35,789 - INFO - 127.0.0.1 - - [04/Jul/2025 14:05:35] "GET /accounts/edit/mell3@gmx.ch HTTP/1.1" 200 -
+2025-07-04 14:05:43,045 - INFO - 127.0.0.1 - - [04/Jul/2025 14:05:43] "[32mPOST /accounts/edit/mell3@gmx.ch HTTP/1.1[0m" 302 -
+2025-07-04 14:05:43,068 - INFO - 127.0.0.1 - - [04/Jul/2025 14:05:43] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 14:05:52,028 - INFO - 127.0.0.1 - - [04/Jul/2025 14:05:52] "GET / HTTP/1.1" 200 -
+2025-07-04 14:07:13,978 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 14:07:14,032 - INFO -  * Restarting with stat
+2025-07-04 14:07:15,298 - WARNING -  * Debugger is active!
+2025-07-04 14:07:15,300 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 14:09:13,267 - INFO - 127.0.0.1 - - [04/Jul/2025 14:09:13] "GET /status HTTP/1.1" 200 -
+2025-07-04 14:09:19,335 - INFO - 127.0.0.1 - - [04/Jul/2025 14:09:19] "GET / HTTP/1.1" 200 -
+2025-07-04 14:09:20,864 - INFO - 127.0.0.1 - - [04/Jul/2025 14:09:20] "GET /logs HTTP/1.1" 200 -
+2025-07-04 14:09:27,372 - INFO - 127.0.0.1 - - [04/Jul/2025 14:09:27] "GET /recipients HTTP/1.1" 200 -
+2025-07-04 14:09:37,446 - INFO - 127.0.0.1 - - [04/Jul/2025 14:09:37] "GET /recipients HTTP/1.1" 200 -
+2025-07-04 14:10:07,112 - INFO - 127.0.0.1 - - [04/Jul/2025 14:10:07] "GET /recipients HTTP/1.1" 200 -
+2025-07-04 14:13:18,268 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-04 14:13:18,339 - INFO -  * Restarting with stat
+2025-07-04 14:13:19,329 - WARNING -  * Debugger is active!
+2025-07-04 14:13:19,330 - INFO -  * Debugger PIN: 879-382-228
+2025-07-04 14:13:27,092 - INFO - 127.0.0.1 - - [04/Jul/2025 14:13:27] "GET / HTTP/1.1" 200 -
+2025-07-04 14:13:34,207 - INFO - 127.0.0.1 - - [04/Jul/2025 14:13:34] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 14:13:36,748 - INFO - 127.0.0.1 - - [04/Jul/2025 14:13:36] "GET /accounts/upload HTTP/1.1" 200 -
+2025-07-04 14:13:56,282 - INFO - 127.0.0.1 - - [04/Jul/2025 14:13:56] "[32mPOST /accounts/upload HTTP/1.1[0m" 302 -
+2025-07-04 14:13:56,299 - INFO - 127.0.0.1 - - [04/Jul/2025 14:13:56] "GET /accounts HTTP/1.1" 200 -
+2025-07-04 14:14:01,679 - INFO - 127.0.0.1 - - [04/Jul/2025 14:14:01] "GET / HTTP/1.1" 200 -
+2025-07-04 14:14:09,143 - INFO - 127.0.0.1 - - [04/Jul/2025 14:14:09] "GET /recipients HTTP/1.1" 200 -
