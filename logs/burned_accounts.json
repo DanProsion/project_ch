@@ -77,5 +77,25 @@
     "active": true,
     "limit_per_session": 20,
     "delay_seconds": 10
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mentaldagod@gmx.ch",
+    "password": "RAZPKaDStw",
+    "from_name": "GMX Mental",
+    "active": true,
+    "limit_per_session": 20,
+    "delay_seconds": 10
+  },
+  {
+    "host": "mail.gmx.com",
+    "port": 587,
+    "username": "mentaldagod@gmx.ch",
+    "password": "RAZPKaDStw",
+    "from_name": "GMX Mental",
+    "active": true,
+    "limit_per_session": 20,
+    "delay_seconds": 10
   }
 ]

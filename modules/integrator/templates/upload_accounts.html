@@ -1,27 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Загрузка SMTP аккаунтов</title>
+    <title>Страница</title>
+
+    <!-- Подключение шрифта -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Общие стили -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        form {
-            margin-top: 30px;
-        }
-        input[type="file"] {
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 6px 12px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 30px;
-            text-decoration: none;
-            color: #333;
-        }
+      body {
+        margin: 0;
+        font-family: 'IBM Plex Sans', sans-serif;
+        background-image: url('/static/common.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #eaeef4;
+        padding: 30px;
+      }
+
+      h1 {
+        color: #d0d9e6;
+        text-shadow: 0 0 3px #1e2f4d;
+      }
+
+      button {
+        background: linear-gradient(145deg, #1b2f47, #223d5f);
+        color: #eaeef4;
+        padding: 10px 18px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-bottom: 12px;
+        display: inline-block;
+      }
+
+      button:hover {
+        background: linear-gradient(145deg, #2b4160, #3b5d88);
+      }
+
+      form {
+        margin-bottom: 8px;
+      }
+
+      a {
+        color: #8996aa;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      ul {
+        background-color: rgba(0, 80, 0, 0.15);
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
     </style>
 </head>
 <body>

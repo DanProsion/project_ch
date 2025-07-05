@@ -21,7 +21,7 @@
       }
 
       h1 {
-        color: #d0d9e6;
+        color: #8996aa;
         text-shadow: 0 0 3px #1e2f4d;
       }
 
@@ -65,7 +65,7 @@
 </head>
 
 <body>
-    <h1>Привет! Это веб-интерфейс проекта</h1>
+    <h1>Tutti парсер</h1>
 
     <!-- Новые кнопки запуска -->
     <form method="post" action="{{ url_for('run_parser') }}">
@@ -73,7 +73,7 @@
     </form>
 
     <form method="post" action="{{ url_for('run_checker') }}">
-        <button type="submit">🧪 Запустить чекер</button>
+        <button type="submit">🔎 Запустить чекер</button>
     </form>
 
     <form method="post" action="{{ url_for('run_sender') }}">
@@ -89,7 +89,7 @@
     </form>
 
     <form action="/recipients" method="get">
-        <button type="submit">📬 Посмотреть валидные email</button>
+        <button type="submit">📨 Посмотреть валидные email</button>
     </form>
 
     <form action="/accounts" method="get">

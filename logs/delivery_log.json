@@ -103,5 +103,19 @@
     "sender": "mell3@gmx.ch",
     "status": "error",
     "error": "(535, 'authentication credentials invalid')"
+  },
+  {
+    "timestamp": "2025-07-05T11:10:56.489338Z",
+    "recipient": "test18@bk.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "error",
+    "error": "(535, 'authentication credentials invalid')"
+  },
+  {
+    "timestamp": "2025-07-05T11:47:41.089607Z",
+    "recipient": "test18@bk.ru",
+    "sender": "mentaldagod@gmx.ch",
+    "status": "error",
+    "error": "(535, 'authentication credentials invalid')"
   }
 ]

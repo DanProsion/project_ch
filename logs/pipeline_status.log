@@ -502,3 +502,302 @@ RuntimeError: Event loop is closed
 2025-07-05 01:22:49,481 - INFO - 127.0.0.1 - - [05/Jul/2025 01:22:49] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
 2025-07-05 01:22:56,774 - INFO - 127.0.0.1 - - [05/Jul/2025 01:22:56] "GET / HTTP/1.1" 200 -
 2025-07-05 01:22:57,759 - INFO - 127.0.0.1 - - [05/Jul/2025 01:22:57] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:52:58,494 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-05 13:52:58,495 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 13:52:58,499 - INFO -  * Restarting with stat
+2025-07-05 13:52:59,531 - WARNING -  * Debugger is active!
+2025-07-05 13:52:59,537 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 13:53:02,153 - INFO - 127.0.0.1 - - [05/Jul/2025 13:53:02] "GET / HTTP/1.1" 200 -
+2025-07-05 13:53:03,931 - INFO - 127.0.0.1 - - [05/Jul/2025 13:53:03] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:54:01,125 - INFO - 127.0.0.1 - - [05/Jul/2025 13:54:01] "GET / HTTP/1.1" 200 -
+2025-07-05 13:54:01,569 - INFO - 127.0.0.1 - - [05/Jul/2025 13:54:01] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:55:13,689 - INFO - 127.0.0.1 - - [05/Jul/2025 13:55:13] "GET / HTTP/1.1" 200 -
+2025-07-05 13:55:14,125 - INFO - 127.0.0.1 - - [05/Jul/2025 13:55:14] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:55:38,560 - INFO - 127.0.0.1 - - [05/Jul/2025 13:55:38] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:55:45,007 - INFO - 127.0.0.1 - - [05/Jul/2025 13:55:45] "GET / HTTP/1.1" 200 -
+2025-07-05 13:55:45,697 - INFO - 127.0.0.1 - - [05/Jul/2025 13:55:45] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:55:46,471 - INFO - 127.0.0.1 - - [05/Jul/2025 13:55:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 13:59:14,269 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-05 13:59:14,316 - INFO -  * Restarting with stat
+2025-07-05 13:59:15,550 - WARNING -  * Debugger is active!
+2025-07-05 13:59:15,551 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 13:59:17,637 - INFO - 127.0.0.1 - - [05/Jul/2025 13:59:17] "GET / HTTP/1.1" 200 -
+2025-07-05 13:59:18,702 - INFO - 127.0.0.1 - - [05/Jul/2025 13:59:18] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:59:19,746 - INFO - 127.0.0.1 - - [05/Jul/2025 13:59:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 13:59:47,774 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-05 13:59:47,775 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 13:59:47,781 - INFO -  * Restarting with stat
+2025-07-05 13:59:48,842 - WARNING -  * Debugger is active!
+2025-07-05 13:59:48,846 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 13:59:51,017 - INFO - 127.0.0.1 - - [05/Jul/2025 13:59:51] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 13:59:53,313 - INFO - 127.0.0.1 - - [05/Jul/2025 13:59:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:02:16,286 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-05 14:02:16,286 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 14:02:16,291 - INFO -  * Restarting with stat
+2025-07-05 14:02:17,947 - WARNING -  * Debugger is active!
+2025-07-05 14:02:17,948 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 14:02:18,759 - INFO - 127.0.0.1 - - [05/Jul/2025 14:02:18] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 14:02:20,820 - INFO - 127.0.0.1 - - [05/Jul/2025 14:02:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:02:22,189 - INFO - 127.0.0.1 - - [05/Jul/2025 14:02:22] "[33mGET /static/base.png HTTP/1.1[0m" 404 -
+2025-07-05 14:02:22,797 - INFO - 127.0.0.1 - - [05/Jul/2025 14:02:22] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:05:20,552 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-05 14:05:20,603 - INFO -  * Restarting with stat
+2025-07-05 14:05:21,619 - WARNING -  * Debugger is active!
+2025-07-05 14:05:21,621 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 14:05:26,111 - INFO - 127.0.0.1 - - [05/Jul/2025 14:05:26] "GET /static/base.png HTTP/1.1" 200 -
+2025-07-05 14:05:28,126 - INFO - 127.0.0.1 - - [05/Jul/2025 14:05:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:05:34,925 - INFO - 127.0.0.1 - - [05/Jul/2025 14:05:34] "GET / HTTP/1.1" 200 -
+2025-07-05 14:05:35,690 - INFO - 127.0.0.1 - - [05/Jul/2025 14:05:35] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:05:36,124 - INFO - 127.0.0.1 - - [05/Jul/2025 14:05:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:06:01,435 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:01] "[32mPOST /run-parser HTTP/1.1[0m" 302 -
+2025-07-05 14:06:01,453 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:01] "GET / HTTP/1.1" 200 -
+2025-07-05 14:06:02,058 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:02] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:06:02,555 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:06:02,979 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:02] "[32mPOST /run-checker HTTP/1.1[0m" 302 -
+2025-07-05 14:06:02,992 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:02] "GET / HTTP/1.1" 200 -
+2025-07-05 14:06:03,674 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:03] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:06:04,063 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:06:04,437 - INFO - Starting Automation Project...
+2025-07-05 14:06:04,438 - INFO - Running tutti.ch parser...
+2025-07-05 14:06:04,696 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:04] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:06:05,115 - INFO - Starting Automation Project...
+2025-07-05 14:06:05,116 - INFO - Running email checker...
+2025-07-05 14:06:05,647 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:06:07,009 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:06:12,507 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:12] "GET /status HTTP/1.1" 200 -
+2025-07-05 14:06:14,133 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:06:14,638 - INFO - 127.0.0.1 - - [05/Jul/2025 14:06:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:07:15,365 - INFO - Email check completed.
+2025-07-05 14:07:15,366 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-05 14:08:17,692 - INFO - Parser completed. Data saved to data/parsed_data.json
+2025-07-05 14:08:17,693 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-05 14:08:19,421 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:19] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:08:20,578 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:08:22,574 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:22] "GET / HTTP/1.1" 200 -
+2025-07-05 14:08:23,140 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:23] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:08:23,398 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:08:24,527 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:24] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-07-05 14:08:24,544 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:24] "GET / HTTP/1.1" 200 -
+2025-07-05 14:08:24,937 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:24] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:08:25,408 - INFO - 127.0.0.1 - - [05/Jul/2025 14:08:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:08:25,916 - INFO - Starting Automation Project...
+2025-07-05 14:08:25,917 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-05 14:08:25,917 - INFO - Running integrated workflow...
+2025-07-05 14:08:25,918 - INFO - [WORKFLOW] Запуск полного пайплайна...
+2025-07-05 14:08:25,918 - INFO - [WORKFLOW] Парсинг объявлений
+2025-07-05 14:09:30,183 - INFO - [WORKFLOW] Парсинг завершён. Сохранено: 0 записей.
+2025-07-05 14:09:30,261 - INFO - [WORKFLOW] Генерация и валидация email-адресов...
+2025-07-05 14:10:25,893 - INFO - [WORKFLOW] Проверка e-mail адресов завершена.
+2025-07-05 14:10:25,894 - INFO - [WORKFLOW] Отправка писем...
+2025-07-05 14:10:33,855 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:33] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:10:35,112 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:10:38,053 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:38] "[32mGET /download/recipients HTTP/1.1[0m" 302 -
+2025-07-05 14:10:38,083 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:38] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:10:38,836 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:10:46,028 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:46] "[32mGET /download/recipients HTTP/1.1[0m" 302 -
+2025-07-05 14:10:46,046 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:46] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:10:46,710 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:10:50,522 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:50] "[32mGET /download/recipients HTTP/1.1[0m" 302 -
+2025-07-05 14:10:50,540 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:50] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:10:51,131 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:10:52,579 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:52] "GET / HTTP/1.1" 200 -
+2025-07-05 14:10:52,965 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:52] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:10:53,214 - INFO - 127.0.0.1 - - [05/Jul/2025 14:10:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:10:56,516 - ERROR - Ошибка авторизации для mentaldagod@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-05 14:10:56,518 - WARNING - SMTP-аккаунт mentaldagod@gmx.ch помечен как невалидный и удалён.
+2025-07-05 14:10:56,558 - INFO - [WORKFLOW] Рассылка завершена.
+2025-07-05 14:10:56,642 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x718ebe7dada0>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-05 14:18:47,500 - INFO - 127.0.0.1 - - [05/Jul/2025 14:18:47] "GET / HTTP/1.1" 200 -
+2025-07-05 14:18:48,563 - INFO - 127.0.0.1 - - [05/Jul/2025 14:18:48] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:18:49,419 - INFO - 127.0.0.1 - - [05/Jul/2025 14:18:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:18:51,019 - INFO - 127.0.0.1 - - [05/Jul/2025 14:18:51] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:18:51,452 - INFO - 127.0.0.1 - - [05/Jul/2025 14:18:51] "GET /static/common.png HTTP/1.1" 200 -
+2025-07-05 14:18:51,730 - INFO - 127.0.0.1 - - [05/Jul/2025 14:18:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:20:51,392 - INFO - 127.0.0.1 - - [05/Jul/2025 14:20:51] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:20:51,918 - INFO - 127.0.0.1 - - [05/Jul/2025 14:20:51] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:20:52,280 - INFO - 127.0.0.1 - - [05/Jul/2025 14:20:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:21:08,711 - INFO - 127.0.0.1 - - [05/Jul/2025 14:21:08] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:21:09,232 - INFO - 127.0.0.1 - - [05/Jul/2025 14:21:09] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:21:09,565 - INFO - 127.0.0.1 - - [05/Jul/2025 14:21:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:30:02,539 - INFO - 127.0.0.1 - - [05/Jul/2025 14:30:02] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:30:03,431 - INFO - 127.0.0.1 - - [05/Jul/2025 14:30:03] "GET /static/common.png HTTP/1.1" 200 -
+2025-07-05 14:30:04,197 - INFO - 127.0.0.1 - - [05/Jul/2025 14:30:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:31:43,278 - INFO - 127.0.0.1 - - [05/Jul/2025 14:31:43] "GET /accounts/add HTTP/1.1" 200 -
+2025-07-05 14:31:43,837 - INFO - 127.0.0.1 - - [05/Jul/2025 14:31:43] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:31:44,207 - INFO - 127.0.0.1 - - [05/Jul/2025 14:31:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:31:48,671 - INFO - 127.0.0.1 - - [05/Jul/2025 14:31:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:32:11,502 - INFO - 127.0.0.1 - - [05/Jul/2025 14:32:11] "GET /accounts/archive HTTP/1.1" 200 -
+2025-07-05 14:32:12,135 - INFO - 127.0.0.1 - - [05/Jul/2025 14:32:12] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:32:12,456 - INFO - 127.0.0.1 - - [05/Jul/2025 14:32:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:32:25,979 - INFO - 127.0.0.1 - - [05/Jul/2025 14:32:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:33:09,818 - INFO - 127.0.0.1 - - [05/Jul/2025 14:33:09] "GET /accounts/edit/mell3@gmx.ch HTTP/1.1" 200 -
+2025-07-05 14:33:10,522 - INFO - 127.0.0.1 - - [05/Jul/2025 14:33:10] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:33:10,755 - INFO - 127.0.0.1 - - [05/Jul/2025 14:33:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:33:13,575 - INFO - 127.0.0.1 - - [05/Jul/2025 14:33:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:35:07,911 - INFO - 127.0.0.1 - - [05/Jul/2025 14:35:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:35:11,921 - INFO - 127.0.0.1 - - [05/Jul/2025 14:35:11] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:35:12,546 - INFO - 127.0.0.1 - - [05/Jul/2025 14:35:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:35:16,056 - INFO - 127.0.0.1 - - [05/Jul/2025 14:35:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:36:37,765 - INFO - 127.0.0.1 - - [05/Jul/2025 14:36:37] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:36:38,423 - INFO - 127.0.0.1 - - [05/Jul/2025 14:36:38] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:36:38,807 - INFO - 127.0.0.1 - - [05/Jul/2025 14:36:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:36:46,456 - INFO - 127.0.0.1 - - [05/Jul/2025 14:36:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:37:50,563 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:50] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:37:51,228 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:51] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:37:51,569 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:37:55,007 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:55] "GET / HTTP/1.1" 200 -
+2025-07-05 14:37:55,368 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:55] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:37:55,610 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:37:59,949 - INFO - 127.0.0.1 - - [05/Jul/2025 14:37:59] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:38:00,315 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:00] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:38:00,664 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:38:02,949 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:38:29,999 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:29] "GET /status HTTP/1.1" 200 -
+2025-07-05 14:38:30,664 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:30] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:38:31,036 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:38:35,474 - INFO - 127.0.0.1 - - [05/Jul/2025 14:38:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:03,242 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:03] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:39:03,850 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:03] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:39:04,344 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:06,741 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:06] "GET /accounts/add HTTP/1.1" 200 -
+2025-07-05 14:39:07,163 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:07] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:39:07,411 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:08,876 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:10,430 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:10] "GET /accounts/upload HTTP/1.1" 200 -
+2025-07-05 14:39:10,865 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:10] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:39:11,055 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:14,494 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:14] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:39:14,869 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:14] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:39:15,095 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:16,777 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:17,875 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:19,072 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:39:31,761 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:31] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:39:32,114 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:32] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:39:32,247 - INFO - 127.0.0.1 - - [05/Jul/2025 14:39:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:42:45,864 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-07-05 14:42:45,864 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 14:42:45,867 - INFO -  * Restarting with stat
+2025-07-05 14:42:46,249 - WARNING -  * Debugger is active!
+2025-07-05 14:42:46,259 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 14:42:54,245 - INFO - 127.0.0.1 - - [05/Jul/2025 14:42:54] "[32mGET /download/recipients HTTP/1.1[0m" 302 -
+2025-07-05 14:42:54,282 - INFO - 127.0.0.1 - - [05/Jul/2025 14:42:54] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:42:55,732 - INFO - 127.0.0.1 - - [05/Jul/2025 14:42:55] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:42:56,449 - INFO - 127.0.0.1 - - [05/Jul/2025 14:42:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:43:01,183 - INFO - 127.0.0.1 - - [05/Jul/2025 14:43:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:43:05,409 - INFO - 127.0.0.1 - - [05/Jul/2025 14:43:05] "GET / HTTP/1.1" 200 -
+2025-07-05 14:43:05,790 - INFO - 127.0.0.1 - - [05/Jul/2025 14:43:05] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:43:06,015 - INFO - 127.0.0.1 - - [05/Jul/2025 14:43:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:45:46,617 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-05 14:45:46,657 - INFO -  * Restarting with stat
+2025-07-05 14:45:47,184 - WARNING -  * Debugger is active!
+2025-07-05 14:45:47,185 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 14:45:55,613 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:55] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:45:56,791 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:56] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:45:57,609 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:45:58,430 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:58] "[32mGET /download/recipients HTTP/1.1[0m" 302 -
+2025-07-05 14:45:58,446 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:58] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:45:58,845 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:58] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:45:59,080 - INFO - 127.0.0.1 - - [05/Jul/2025 14:45:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:21,140 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-05 14:47:21,172 - INFO -  * Restarting with stat
+2025-07-05 14:47:21,599 - WARNING -  * Debugger is active!
+2025-07-05 14:47:21,599 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 14:47:28,651 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:28] "GET /recipients HTTP/1.1" 200 -
+2025-07-05 14:47:28,997 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:28] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:29,150 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:30,650 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:30] "GET /download/recipients HTTP/1.1" 200 -
+2025-07-05 14:47:35,475 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:35] "GET / HTTP/1.1" 200 -
+2025-07-05 14:47:35,888 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:35] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:36,169 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:37,805 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:37] "[32mPOST /run-sender HTTP/1.1[0m" 302 -
+2025-07-05 14:47:37,815 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:37] "GET / HTTP/1.1" 200 -
+2025-07-05 14:47:38,162 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:38] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:38,455 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:39,559 - INFO - Starting Automation Project...
+2025-07-05 14:47:39,559 - INFO - Running SMTP sender...
+2025-07-05 14:47:40,599 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:40] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:47:40,969 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:40] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:41,096 - ERROR - Ошибка авторизации для mentaldagod@gmx.ch: (535, 'Authentication credentials invalid')
+2025-07-05 14:47:41,097 - WARNING - SMTP-аккаунт mentaldagod@gmx.ch помечен как невалидный и удалён.
+2025-07-05 14:47:41,102 - INFO - Не указана корректная команда для управления аккаунтами.
+2025-07-05 14:47:41,128 - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7ae890fef130>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-05 14:47:41,221 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:42,052 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:42] "[32mGET /download/logs HTTP/1.1[0m" 302 -
+2025-07-05 14:47:42,072 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:42] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:47:42,445 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:42] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:42,684 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:45,940 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:45] "[32mGET /download/logs HTTP/1.1[0m" 302 -
+2025-07-05 14:47:45,955 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:45] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:47:46,270 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:46] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:46,561 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:47:49,439 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:49] "[32mGET /download/logs HTTP/1.1[0m" 302 -
+2025-07-05 14:47:49,455 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:49] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:47:49,772 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:49] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:47:50,051 - INFO - 127.0.0.1 - - [05/Jul/2025 14:47:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:48:55,215 - INFO - 127.0.0.1 - - [05/Jul/2025 14:48:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:48:58,466 - INFO - 127.0.0.1 - - [05/Jul/2025 14:48:58] "GET / HTTP/1.1" 200 -
+2025-07-05 14:48:58,872 - INFO - 127.0.0.1 - - [05/Jul/2025 14:48:58] "[36mGET /static/base.png HTTP/1.1[0m" 304 -
+2025-07-05 14:48:59,105 - INFO - 127.0.0.1 - - [05/Jul/2025 14:48:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:49:01,419 - INFO - 127.0.0.1 - - [05/Jul/2025 14:49:01] "GET /accounts HTTP/1.1" 200 -
+2025-07-05 14:49:01,845 - INFO - 127.0.0.1 - - [05/Jul/2025 14:49:01] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:49:02,205 - INFO - 127.0.0.1 - - [05/Jul/2025 14:49:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:49:05,233 - INFO - 127.0.0.1 - - [05/Jul/2025 14:49:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:50:16,437 - INFO -  * Detected change in '/mnt/c/katya/project_ch/modules/integrator/web_app.py', reloading
+2025-07-05 14:50:16,469 - INFO -  * Restarting with stat
+2025-07-05 14:50:16,899 - WARNING -  * Debugger is active!
+2025-07-05 14:50:16,900 - INFO -  * Debugger PIN: 879-382-228
+2025-07-05 14:50:22,579 - INFO - 127.0.0.1 - - [05/Jul/2025 14:50:22] "GET /logs HTTP/1.1" 200 -
+2025-07-05 14:50:23,229 - INFO - 127.0.0.1 - - [05/Jul/2025 14:50:23] "[36mGET /static/common.png HTTP/1.1[0m" 304 -
+2025-07-05 14:50:23,547 - INFO - 127.0.0.1 - - [05/Jul/2025 14:50:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-07-05 14:50:24,444 - INFO - 127.0.0.1 - - [05/Jul/2025 14:50:24] "GET /download/logs HTTP/1.1" 200 -

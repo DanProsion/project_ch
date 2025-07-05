@@ -8,14 +8,18 @@ from werkzeug.utils import secure_filename
 
 setup_logging()
 
-app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+static_path = os.path.join(BASE_DIR, "static")
+RECIPIENTS_FILE = os.path.join(BASE_DIR, 'data', 'recipients.csv')
+LOG_FILE = os.path.join(BASE_DIR, 'logs', 'delivery_log')
+SMTP_ACCOUNTS = os.path.join(BASE_DIR, 'config', 'smtp_accounts.json')
+BURNED_ACCOUNTS = os.path.join(BASE_DIR, 'logs', 'burned_accounts.json')
+
+
+app = Flask(__name__, static_folder=static_path, static_url_path="/static")
 app.secret_key = 'your_secret_key'
 
-# Пути к файлам логов и отчётов
-LOG_FILE = os.path.join('logs', 'delivery_log')
-RECIPIENTS_FILE = 'data/recipients.csv'
-SMTP_ACCOUNTS = 'config/smtp_accounts.json'
-BURNED_ACCOUNTS = 'logs/burned_accounts.json'
+
 
 @app.route('/')
 def home():
@@ -144,12 +148,14 @@ def upload_accounts():
 
 @app.route('/download/logs')
 def download_logs():
-    log_path = os.path.join('logs', 'delivery_log.json')
+    log_path = os.path.join(BASE_DIR, 'logs', 'delivery_log.json')
     try:
+        print(f"Attempting to send log file from: {log_path}")  # отладка
         return send_file(log_path, as_attachment=True)
     except FileNotFoundError:
         flash('Файл логов не найден.')
         return redirect(url_for('logs'))
+
 
 @app.route('/download/recipients')
 def download_recipients():
